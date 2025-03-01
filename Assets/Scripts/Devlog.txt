@@ -9,4 +9,4 @@ Mar 2025
 1/3		* Started Making a basic app
 		* Created a start menu visually
 		* Basic functionality for Start Menu implemented
-
+		* Two Options Game mode implemented
