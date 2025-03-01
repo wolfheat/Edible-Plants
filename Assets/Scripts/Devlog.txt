@@ -1,0 +1,12 @@
+DEVLOG FOR Edible Plants
+Mar 2025
+
+* IDEAS
+- Make a mobile application to practice edible plants in sweden
+- Have different modes on how to practice
+- Making this for my own practice ut suppling it to others with descretion.
+
+1/3		* Started Making a basic app
+		* Created a start menu visually
+
+
