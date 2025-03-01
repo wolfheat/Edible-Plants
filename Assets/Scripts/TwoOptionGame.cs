@@ -16,18 +16,6 @@ public class TwoOptionGame : MonoBehaviour
     private QuestionData activeQuestionData = null;
     private int correctIndex = -1;
 
-    public static TwoOptionGame Instance { get; private set; }
-
-    private void Awake()
-    {
-        if (Instance != null) {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-    }
-
-
     private void OnEnable()
     {
         Debug.Log("Loading Question!");
@@ -73,6 +61,7 @@ public class TwoOptionGame : MonoBehaviour
         for (int i = 0; i < alternatives; i++) {
             ButtonOption option = Instantiate(buttonPrefab,buttonHolder.transform);
             option.UpdateIndex(i);
+            option.SetGame(this);
             buttons[i] = option;            
         }
     }

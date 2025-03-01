@@ -9,4 +9,9 @@ Mar 2025
 1/3		* Started Making a basic app
 		* Created a start menu visually
 		* Basic functionality for Start Menu implemented
+		* Graphics Added to Main Menu
 		* Two Options Game mode implemented
+
+
+		* Implement mode with digital keyboard and all available answers
+		* Make start menu animate?
