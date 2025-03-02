@@ -35,11 +35,10 @@ public class PlantDataImporter : EditorWindow
 
             string latinName = values[0].Trim();
             string itemName = values[1].Trim();
+            string info = values.Length > 2 ? values[2].Trim():"No Info!";
 
             // Find all matching images
             Sprite[] sprites = FindSpritesForPlant(latinName);
-
-            Debug.Log("Now got "+sprites.Length+" Sprites for "+latinName);
 
             // Save the asset
             string assetPath = SCRIPTABLE_OBJECT_FOLDER + latinName + ".asset";
@@ -49,13 +48,10 @@ public class PlantDataImporter : EditorWindow
 
                 DeletePlantDataIfAvailable(assetPath);
                 continue;
-            }else
-                Debug.Log("FOUND "+sprites.Length+" images for "+latinName+"/"+itemName);
+            }
 
             // Create or update ScriptableObject
-            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, sprites);
-
-            Debug.Log($"Created/Updated: {assetPath}");
+            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, sprites);
         }
 
         AssetDatabase.SaveAssets();
@@ -86,31 +82,24 @@ public class PlantDataImporter : EditorWindow
     {
         List<Sprite> spriteList = new List<Sprite>();
         
-        Debug.Log(" ------ ");
-        Debug.Log("Characters Path: "+latinName);
-
         string[] files = Directory.GetFiles(IMAGE_FOLDER, latinName + "*.*", SearchOption.TopDirectoryOnly);
 
-        Debug.Log("Loaded image files for: "+latinName+" found "+files.Length);
-
-            foreach (string file in files) {
-                if (file.EndsWith(".png") || file.EndsWith(".jpg") || file.EndsWith(".jpeg")) {
+        foreach (string file in files) {
+            if (file.EndsWith(".png") || file.EndsWith(".jpg") || file.EndsWith(".jpeg")) {
                 
-                    Debug.Log("Found image sprites for: "+latinName);
-
-                    //string assetPath = Application.dataPath +"Assets/";
-                    string assetPath = file.Replace(Application.dataPath, "").Replace("\\", "/");
-                    Debug.Log("Asset Path: "+assetPath);
+                //string assetPath = Application.dataPath +"Assets/";
+                string assetPath = file.Replace(Application.dataPath, "").Replace("\\", "/");
+                Debug.Log("Asset Path: "+assetPath);
 
 
                 Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(assetPath);
-                    if (sprite != null) {
-                        Debug.LogWarning("Loaded sprite: "+latinName+" at "+assetPath);
-                        spriteList.Add(sprite);
-                    }else
-                        Debug.LogWarning("Could not load sprite: "+latinName+" at "+assetPath);
-                }
+                if (sprite != null) {
+                    Debug.LogWarning("Loaded sprite: "+latinName+" at "+assetPath);
+                    spriteList.Add(sprite);
+                }else
+                    Debug.LogWarning("Could not load sprite: "+latinName+" at "+assetPath);
             }
+        }
 
         return spriteList.ToArray();
     }
@@ -119,18 +108,15 @@ public class PlantDataImporter : EditorWindow
     {
         List<QuestionData> datas = new();
         
-        Debug.Log(" ------ ");
         Debug.Log("Trying to read all data from library: ");
 
         string[] files = Directory.GetFiles(SCRIPTABLE_OBJECT_FOLDER);
 
-        Debug.Log("Loaded all scriptable object files: "+files.Length);
-
         foreach (string file in files) {
             if(!file.EndsWith(".asset"))
                 continue;
+
             string assetPath = file.Replace(Application.dataPath, "").Replace("\\", "/");
-            Debug.Log("SO Path: "+assetPath);
 
             QuestionData questionData = AssetDatabase.LoadAssetAtPath<QuestionData>(assetPath);
 
@@ -144,18 +130,17 @@ public class PlantDataImporter : EditorWindow
     {
         if (AssetDatabase.AssetPathExists(assetPath)) {
             AssetDatabase.DeleteAsset(assetPath);
-            Debug.Log("Deleted asset "+assetPath);
         }
     }
     
-    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, Sprite[] sprites)
+    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, Sprite[] sprites)
     {
         Debug.Log("Create Or Update Plant Data: " + latinName);
-
         QuestionData plantData = GetData(latinName);
 
         plantData.ItemName = itemName;
         plantData.LatinName = latinName;
+        plantData.info = info;
         plantData.sprites = sprites;
 
         return plantData;

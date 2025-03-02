@@ -56,7 +56,6 @@ public class ItemDictionary : MonoBehaviour
     {
         // Will run until a random item that is not allready used is picked. Change to limit this and use more mem instead
         List<string> ans = new List<string>();
-        Debug.Log("Trying to get "+ amt + " wrong answers from Dictionary. Do not return the correct answer "+itemName+" among the results!");
         while(ans.Count < amt) {
             int index = Random.Range(0, questionAnswers.Length);
             string answer = questionAnswers[index];

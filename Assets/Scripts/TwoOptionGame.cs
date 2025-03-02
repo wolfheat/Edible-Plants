@@ -8,6 +8,7 @@ public class TwoOptionGame : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI resultText;
     [SerializeField] private Image QuestionImage;
+    [SerializeField] private TextMeshProUGUI infoText;
 
     [SerializeField] private GameObject buttonHolder;
     [SerializeField] private ButtonOption buttonPrefab;
@@ -18,22 +19,20 @@ public class TwoOptionGame : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("Loading Question!");
         LoadRandomQuestion();
     }
 
     public void AnswerOption(int index = 0)
     {
         if (index == -1) {
-            Debug.Log("Invalid Answer button Clicked");
+            Debug.LogWarning("Invalid Answer button Clicked");
             return;
         }
 
-        Debug.Log("Player quessed "+index+ " = " + buttons[index].GetText());
-        Debug.Log("Player quessed "+ (index == correctIndex ? "Correct!" : " Wrong!" ));
-
-
         resultText.text = index == correctIndex ? "Correct!":"Wrong!";
+
+        infoText.text = activeQuestionData.info; 
+
 
     }
     public void LoadRandomQuestion(int alternatives = 2)
@@ -46,6 +45,7 @@ public class TwoOptionGame : MonoBehaviour
 
         activeQuestionData = questionData;
 
+        infoText.text = "";
 
         UpdateCurrentQuestionVisuals();
 
@@ -90,7 +90,8 @@ public class TwoOptionGame : MonoBehaviour
             buttons[i].UpdateText(alternativeAnswers[i]);
         
         // Set Sprite
-        QuestionImage.sprite = activeQuestionData.sprites[0];
+        if(activeQuestionData.sprites.Length > 0)
+            QuestionImage.sprite = activeQuestionData.sprites[0];
     }
 
     private void PrintAnswers(List<string> listItems, string prefix="") => Debug.Log(prefix+" [" + string.Join(',', listItems) + "]");
