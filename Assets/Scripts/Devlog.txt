@@ -11,6 +11,8 @@ Mar 2025
 		* Basic functionality for Start Menu implemented
 		* Graphics Added to Main Menu
 		* Two Options Game mode implemented
+2/3		* Made it possible to load Data from SVG file created in Excel with data, images loads by latin name
+		* File can now be loaded even if it is opened in excel
 
 
 		* Implement mode with digital keyboard and all available answers

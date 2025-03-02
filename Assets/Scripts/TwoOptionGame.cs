@@ -90,7 +90,7 @@ public class TwoOptionGame : MonoBehaviour
             buttons[i].UpdateText(alternativeAnswers[i]);
         
         // Set Sprite
-        QuestionImage.sprite = activeQuestionData.sprite;
+        QuestionImage.sprite = activeQuestionData.sprites[0];
     }
 
     private void PrintAnswers(List<string> listItems, string prefix="") => Debug.Log(prefix+" [" + string.Join(',', listItems) + "]");

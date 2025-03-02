@@ -24,6 +24,14 @@ public class ItemDictionary : MonoBehaviour
 
     }
 
+    [ContextMenu("Reload Plants")]
+    private void LoadAllPlantsAssetDatas()
+    {
+        Debug.Log("Reloading Plants");
+        questions = PlantDataImporter.ReturnAllData();
+        GenerateListOfAllAnswers();
+    }
+
     private void GenerateListOfAllAnswers()
     {
         questionAnswers = new string[questions.Count];
