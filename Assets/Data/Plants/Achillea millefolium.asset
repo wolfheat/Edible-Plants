@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
   m_Name: Achillea millefolium
   m_EditorClassIdentifier: 
-  ItemName: 
-  LatinName: 
-  sprites: []
+  ItemName: "R\xF6llika"
+  LatinName: Achillea millefolium
+  info: "R\xF6llika blommar hela sommaren och l\xE5ngt in p\xE5 h\xF6sten, men ger
+    ingen nektar. Pollineras \xE4nd\xE5 av insekter, som bes\xF6ker blomman f\xF6r
+    fr\xF6mj\xF6lets skull."
+  sprites:
+  - {fileID: 6846916219557344911, guid: 2eba7597fd4fab5469137f798774f047, type: 3}
+  - {fileID: -6651572413669445005, guid: 207ce169cb203fc4b9b96d00e8ffba8f, type: 3}
+  root: 2
+  stem: 0
+  leaf: 0
+  flower: 0
+  seed: 0

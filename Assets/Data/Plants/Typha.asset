@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
   m_Name: Typha
   m_EditorClassIdentifier: 
-  ItemName: 
-  LatinName: 
-  sprites: []
+  ItemName: Kaveldun
+  LatinName: Typha
+  info: "Kaveldunsl\xE4ktet (Typha)[1][2] \xE4r ett sl\xE4kte i familjen kaveldunsv\xE4xter[1].
+    Sl\xE4ktet har 8\u201315 arter som f\xF6rekommer i n\xE4stan hela v\xE4rlden.
+    Sl\xE4ktet beskrevs f\xF6rst av Carl von Linn\xE9. I Sverige finns arterna bredkaveldun
+    (T. latifolia) och smalkaveldun (T. angustifolia)"
+  sprites:
+  - {fileID: 5104652042491954296, guid: 9c91a79d17eb4834594a63df28369321, type: 3}
+  root: 2
+  stem: 0
+  leaf: 0
+  flower: 0
+  seed: 0

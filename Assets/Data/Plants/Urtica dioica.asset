@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
   m_Name: Urtica dioica
   m_EditorClassIdentifier: 
-  ItemName: 
-  LatinName: 
-  sprites: []
+  ItemName: "Br\xE4nn\xE4ssla"
+  LatinName: Urtica dioica
+  info: "Br\xE4nn\xE4ssla (Urtica dioica) \xE4r en art i familjen n\xE4sselv\xE4xter.
+    Arten \xE4r allm\xE4n \xF6ver hela Nordeuropa, men f\xF6rekommer \xE4ven i \xF6vriga
+    Europa, Asien, Nordafrika och Nordamerika."
+  sprites:
+  - {fileID: 21300000, guid: a0dd6eeef51a245408d08772dfc1e8b4, type: 3}
+  root: 0
+  stem: 1
+  leaf: 1
+  flower: 0
+  seed: 0

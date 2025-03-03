@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ItemDictionary : MonoBehaviour
 {
@@ -14,12 +17,14 @@ public class ItemDictionary : MonoBehaviour
     private void Awake()
     {
         if (Instance != null) {
+            Debug.LogWarning("Duplicate ItemDictionary!");
             Destroy(gameObject);
             return;
         }
         Instance = this;
-        Debug.Log("Defining Item Dictionary Instance");
 
+        Debug.Log("Defining Item Dictionary Instance");
+        Debug.Log("ItemDictionary start has "+questions.Count+" items.");
         GenerateListOfAllAnswers();
 
     }
@@ -29,6 +34,7 @@ public class ItemDictionary : MonoBehaviour
     {
         Debug.Log("Reloading Plants");
         questions = PlantDataImporter.ReturnAllData();
+        Debug.Log(questions.Count + " Plants found!");
         GenerateListOfAllAnswers();
     }
 
@@ -37,6 +43,7 @@ public class ItemDictionary : MonoBehaviour
         questionAnswers = new string[questions.Count];
         for (int i = 0; i < questions.Count; i++) 
             questionAnswers[i] = questions[i].ItemName;        
+        Debug.Log("Generating "+questionAnswers.Length+" question Answers.");
     }
 
     public static QuestionData GetRandomQuestionData()
@@ -49,6 +56,7 @@ public class ItemDictionary : MonoBehaviour
 
         // Get random index from the dictionary
         int index = Random.Range(0, Instance.questions.Count);
+        Debug.Log("Getting question index "+index+" from the quesions of length "+questionAnswers.Length+".");
         return Instance.questions[index];
     }
 
@@ -63,5 +71,15 @@ public class ItemDictionary : MonoBehaviour
                 ans.Add(answer);
         }
         return ans;
+    }
+
+    internal static List<string> GetBestFit(string input, int v)
+    {
+        if(input == "") return new List<string>();
+
+        //String.Equals(s, "Foo", StringComparison.CurrentCultureIgnoreCase));
+        
+        // Return the X best options for this request
+        return questionAnswers.Where(x => x.Contains(input, StringComparison.CurrentCultureIgnoreCase)).Take(v).ToList();
     }
 }

@@ -12,6 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
   m_Name: Chamaenerion angustifolium
   m_EditorClassIdentifier: 
-  ItemName: 
-  LatinName: 
-  sprites: []
+  ItemName: "Mj\xF6lke"
+  LatinName: Chamaenerion angustifolium
+  info: "Mj\xF6lke finns i norra halvklotets tempererade omr\xE5den. Den \xE4r vanlig
+    l\xE4ngs banvallar, p\xE5 hyggen och diken i hela Sverige, \xE4nda upp p\xE5
+    kalfj\xE4llet. P\xE5 1950-talet n\xE5dde den enligt en inventering i J\xE4mtland
+    1\_120 m, 2008 har den kl\xE4ttrat upp till 1\_380\_m. Oberoende unders\xF6kningar
+    i Uralbergen, Alperna, Pyren\xE9erna och Jurabergen har visat liknande tendenser.
+    Orsaken antas vara den globala uppv\xE4rmningen"
+  sprites:
+  - {fileID: -1899296840817407468, guid: 6e800729cf40dfd44aeb51f35a26785a, type: 3}
+  root: 2
+  stem: 0
+  leaf: 0
+  flower: 0
+  seed: 0

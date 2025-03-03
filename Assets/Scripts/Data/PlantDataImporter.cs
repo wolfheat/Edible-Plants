@@ -2,8 +2,8 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
-using System;
 using System.Text;
+using System;
 
 public class PlantDataImporter : EditorWindow
 {
@@ -11,7 +11,7 @@ public class PlantDataImporter : EditorWindow
     private const string IMAGE_FOLDER = "Assets/Sprites/Plants/";
     private const string SCRIPTABLE_OBJECT_FOLDER = "Assets/Data/Plants/";
         
-    [MenuItem("Tools/Import Plant Data")]
+    [MenuItem("Tools/Import Plant Data from Plants.cvs")]
     public static void ImportPlantData()
     {
         if (!File.Exists(CSV_PATH)) {
@@ -35,7 +35,16 @@ public class PlantDataImporter : EditorWindow
 
             string latinName = values[0].Trim();
             string itemName = values[1].Trim();
+
             string info = values.Length > 2 ? values[2].Trim():"No Info!";
+
+            int[] edible = new int[5];
+            for (int j = 3; j < values.Length; j++) {
+                int index = j - 3;
+                Debug.Log("parsing:" + values[j]);
+                int value = values[j].Length == 0 ? 0 : Int32.Parse(values[j]);
+                edible[index] = value;
+            }
 
             // Find all matching images
             Sprite[] sprites = FindSpritesForPlant(latinName);
@@ -51,7 +60,8 @@ public class PlantDataImporter : EditorWindow
             }
 
             // Create or update ScriptableObject
-            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, sprites);
+            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, sprites, edible);
+
         }
 
         AssetDatabase.SaveAssets();
@@ -133,28 +143,36 @@ public class PlantDataImporter : EditorWindow
         }
     }
     
-    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, Sprite[] sprites)
+    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, Sprite[] sprites, int[] edible)
     {
         Debug.Log("Create Or Update Plant Data: " + latinName);
-        QuestionData plantData = GetData(latinName);
+        
+        string assetPath = SCRIPTABLE_OBJECT_FOLDER + latinName + ".asset";
+        QuestionData plantData = AssetDatabase.LoadAssetAtPath<QuestionData>(assetPath);
+
+        bool dataExists = plantData != null;
+
+        if(!dataExists) {        
+            plantData = ScriptableObject.CreateInstance<QuestionData>();
+        }
 
         plantData.ItemName = itemName;
         plantData.LatinName = latinName;
         plantData.info = info;
         plantData.sprites = sprites;
+        plantData.root = edible[0];
+        plantData.stem = edible[1];
+        plantData.leaf = edible[2];
+        plantData.flower = edible[3];
+        plantData.seed = edible[4];
 
-        return plantData;
-    }
 
-    public static QuestionData GetData(string latinName)
-    {
-        string assetPath = SCRIPTABLE_OBJECT_FOLDER + latinName + ".asset";
-        QuestionData plantData = AssetDatabase.LoadAssetAtPath<QuestionData>(assetPath);
-
-        if (plantData == null) {
-            plantData = ScriptableObject.CreateInstance<QuestionData>();
+        if (!dataExists)
             AssetDatabase.CreateAsset(plantData,assetPath);
-        }
+
+        // Make sure the changes are stored
+        EditorUtility.SetDirty(plantData);
+
         return plantData;
     }
 

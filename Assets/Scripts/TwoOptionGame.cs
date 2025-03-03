@@ -1,80 +1,59 @@
 using System.Collections.Generic;
-using System.Text;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-
-public class TwoOptionGame : MonoBehaviour
+using Color = UnityEngine.Color;
+public class TwoOptionGame : BaseGame
 {
-    [SerializeField] private TextMeshProUGUI resultText;
-    [SerializeField] private Image QuestionImage;
     [SerializeField] private TextMeshProUGUI infoText;
 
-    [SerializeField] private GameObject buttonHolder;
-    [SerializeField] private ButtonOption buttonPrefab;
-    [SerializeField] private ButtonOption[] buttons;
+    private string[] parts = { "Root", "Stem", "Leaf", "Flower", "Seed" };
 
-    private QuestionData activeQuestionData = null;
-    private int correctIndex = -1;
-
-    private void OnEnable()
+    private void SetInfoText()
     {
-        LoadRandomQuestion();
+        infoText.text = activeQuestionData.info;
+
+        // Add edible in list
+        infoText.text += "\n\n Edible Parts: ";
+
+        int[] plantParts = activeQuestionData.PlantParts;
+
+        for (int i = 0; i < plantParts.Length; i++) {
+            int part = plantParts[i];
+            if (part == 1)                
+                infoText.text += $"<color=#29A284>{parts[i]} </color>";
+            else if (part == 2)
+                infoText.text += $"<color=#985915>{parts[i]} </color>";
+        }
     }
 
-    public void AnswerOption(int index = 0)
+    public override void LoadRandomQuestion()
     {
-        if (index == -1) {
-            Debug.LogWarning("Invalid Answer button Clicked");
-            return;
-        }
+        GetRandomQuestion();
 
-        resultText.text = index == correctIndex ? "Correct!":"Wrong!";
-
-        infoText.text = activeQuestionData.info; 
-
-
-    }
-    public void LoadRandomQuestion(int alternatives = 2)
-    {
-        QuestionData questionData = ItemDictionary.GetRandomQuestionData();
-        if (questionData == null) {
-            Debug.Log("Could not load any Question!");
-            return;
-        }
-
-        activeQuestionData = questionData;
-
-        infoText.text = "";
+        if (infoText != null)
+            infoText.text = "";
 
         UpdateCurrentQuestionVisuals();
 
     }
 
-    private void CreateButtons(int alternatives)
+    public override void AnswerOption(string answer)
     {
-        for (int i = buttons.Length - 1; i >= 0; i--) {
-            Destroy(buttons[i].gameObject);
-        }
-
-        buttons = new ButtonOption[alternatives];
-        for (int i = 0; i < alternatives; i++) {
-            ButtonOption option = Instantiate(buttonPrefab,buttonHolder.transform);
-            option.UpdateIndex(i);
-            option.SetGame(this);
-            buttons[i] = option;            
-        }
+        base.AnswerOption(answer);
+        if (infoText != null)
+            SetInfoText();
     }
 
-    private void UpdateCurrentQuestionVisuals(int alternatives=2)
+    protected override void UpdateCurrentQuestionVisuals()
     {
+        int alternatives = 2;
         // Make correct amount of answer buttons
         CreateButtons(alternatives);
 
         resultText.text = "Make your Choice!";
 
         // Set Correct answer at random position and store the correct answer
-        correctIndex = Random.Range(0, alternatives);
+        int correctIndex = Random.Range(0, alternatives);
 
         // Get list of X alternative answers from the Dictionary?
         List<string> alternativeAnswers = ItemDictionary.GetRandomWrongAnswerStrings(activeQuestionData.ItemName,alternatives-1);
@@ -88,11 +67,14 @@ public class TwoOptionGame : MonoBehaviour
         // Place all button texts in the buttons
         for (int i = 0; i < alternativeAnswers.Count; i++) 
             buttons[i].UpdateText(alternativeAnswers[i]);
-        
-        // Set Sprite
-        if(activeQuestionData.sprites.Length > 0)
-            QuestionImage.sprite = activeQuestionData.sprites[0];
-    }
 
+        // Set Sprite
+        if (activeQuestionData.sprites.Length > 0)
+            QuestionImage.sprite = activeQuestionData.sprites[0];
+
+        base.UpdateCurrentQuestionVisuals();
+    }
+    
     private void PrintAnswers(List<string> listItems, string prefix="") => Debug.Log(prefix+" [" + string.Join(',', listItems) + "]");
+
 }

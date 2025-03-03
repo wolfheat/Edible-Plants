@@ -12,6 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
   m_Name: Lamium purpureum
   m_EditorClassIdentifier: 
-  ItemName: 
-  LatinName: 
-  sprites: []
+  ItemName: "R\xF6dplister"
+  LatinName: Lamium purpureum
+  info: "R\xF6dplister (Lamium purpureum) \xE4r en ett\xE5rig, cirka 30 centimeter
+    h\xF6g \xF6rt med purpurr\xF6da blommor. Unga blad \xE4r ocks\xE5 purpurf\xE4rgade,
+    men blir gr\xF6na med tiden. Den r\xF6da f\xE4rgen dr\xF6jer kvar l\xE4ngst i
+    spetsarna av bladen. R\xF6dplister f\xF6rekommer \xF6ver st\xF6rre delen av Europa
+    och i Asien. Den f\xF6rekommer \xE4ven tidvis, som ogr\xE4s vid odlad mark, i
+    Nordamerika."
+  sprites:
+  - {fileID: -2834206861918281374, guid: a41c624c5a6880c44ac58517cba362cf, type: 3}
+  root: 0
+  stem: 1
+  leaf: 1
+  flower: 0
+  seed: 0

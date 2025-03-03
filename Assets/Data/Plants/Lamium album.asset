@@ -12,6 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
   m_Name: Lamium album
   m_EditorClassIdentifier: 
-  ItemName: 
-  LatinName: 
-  sprites: []
+  ItemName: Vitplister
+  LatinName: Lamium album
+  info: "Vitplister \xE4r m\xE5ng\xE5rig med jordstam. Den har l\xE5ng blomningstid
+    (maj-september). Arten v\xE4xer g\xE4rna p\xE5 odlad mark, i t\xE4ta best\xE5nd
+    vid v\xE4gar, gator och murar. Den \xE4r vanlig i Sveriges \xF6stra  \xD6rtst\xE5ndet
+    producerar en eterisk olja med mycket fr\xE4n lukt. De sp\xE4da skotten som kommer
+    tidigt p\xE5 v\xE5ren har trots det f\xF6rr anv\xE4nts som gr\xF6nk\xE5l. De
+    tidigaste skotten av vitplister \xE4r l\xE4tta att f\xF6rv\xE4xla med n\xE4sselskott,
+    d\xE5 dessa samlas f\xF6r att anv\xE4ndas som k\xE5l, och de tv\xE5 v\xE4xer
+    ofta tillsammans."
+  sprites:
+  - {fileID: -7292844995259838396, guid: 9e1312115828aa445b35bd6ed31ed393, type: 3}
+  root: 0
+  stem: 1
+  leaf: 1
+  flower: 0
+  seed: 0
