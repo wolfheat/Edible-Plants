@@ -21,7 +21,9 @@ MonoBehaviour:
     i Uralbergen, Alperna, Pyren\xE9erna och Jurabergen har visat liknande tendenser.
     Orsaken antas vara den globala uppv\xE4rmningen"
   sprites:
-  - {fileID: -1899296840817407468, guid: 6e800729cf40dfd44aeb51f35a26785a, type: 3}
+  - {fileID: 21300000, guid: 6e800729cf40dfd44aeb51f35a26785a, type: 3}
+  commonness: 1
+  feral: 0
   root: 2
   stem: 0
   leaf: 0

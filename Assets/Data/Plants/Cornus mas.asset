@@ -20,8 +20,10 @@ MonoBehaviour:
     ett litet tr\xE4d (8 meter), med bred och ganska l\xE5g krona. Bladen \xE4r \xE4ggrunda,
     med l\xE5ng spets."
   sprites:
-  - {fileID: -974705514220391619, guid: 1a9369ff754538749a3edb9fe09eb278, type: 3}
-  - {fileID: -8522305132242032273, guid: ec739634d783d1741bc9f560da733020, type: 3}
+  - {fileID: 21300000, guid: 1a9369ff754538749a3edb9fe09eb278, type: 3}
+  - {fileID: 21300000, guid: ec739634d783d1741bc9f560da733020, type: 3}
+  commonness: 3
+  feral: 1
   root: 0
   stem: 0
   leaf: 0

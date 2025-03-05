@@ -22,7 +22,9 @@ MonoBehaviour:
     som \xE4r irriterande p\xE5 hud, s\xE4rskilt om huden uts\xE4tts f\xF6r solbestr\xE5lning
     (fotosensibilisering)."
   sprites:
-  - {fileID: -87866391490923851, guid: a421abe70c7b2d0499343633d1625a57, type: 3}
+  - {fileID: 21300000, guid: a421abe70c7b2d0499343633d1625a57, type: 3}
+  commonness: 2
+  feral: 0
   root: 0
   stem: 0
   leaf: 0

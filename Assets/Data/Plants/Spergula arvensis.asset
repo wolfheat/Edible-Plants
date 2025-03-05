@@ -17,8 +17,10 @@ MonoBehaviour:
   info: "\xC5kersp\xE4rgel (Spergula arvensis\_L.) \xE4r en ett\xE5rig l\xE5gv\xE4xande
     \xF6rt. Ursprungligen stavades svenska namnet \xE5kerspergel."
   sprites:
-  - {fileID: 2417603126889296976, guid: 16b5f2aed4a966c4c897494521f98743, type: 3}
-  - {fileID: 6023288082954575492, guid: 1a89beb8027460d46b3859b4f3e8ae05, type: 3}
+  - {fileID: 21300000, guid: 16b5f2aed4a966c4c897494521f98743, type: 3}
+  - {fileID: 21300000, guid: 1a89beb8027460d46b3859b4f3e8ae05, type: 3}
+  commonness: 2
+  feral: 0
   root: 0
   stem: 1
   leaf: 1

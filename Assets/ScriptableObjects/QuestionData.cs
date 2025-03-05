@@ -11,8 +11,8 @@ public class QuestionData : ScriptableObject
     public Sprite[] sprites;
 
     [Header("Availability")]
-    internal int commonness;
-    internal bool feral;
+    public int commonness;
+    public bool feral;
 
     [Header("Edible Parts")]
     public int root;

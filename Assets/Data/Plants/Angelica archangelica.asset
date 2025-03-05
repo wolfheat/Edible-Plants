@@ -24,10 +24,12 @@ MonoBehaviour:
     sin fulla h\xF6jd och de blekgr\xF6na blommorna sl\xE5r ut."
   sprites:
   - {fileID: 21300000, guid: 77fbcef06bc6e03418e32c3ac8ffa00c, type: 3}
+  commonness: 2
+  feral: 0
   root: 2
   stem: 1
   leaf: 1
   flower: 0
   seed: 0
   fruit: 0
-  avoid: 0
+  avoid: 2

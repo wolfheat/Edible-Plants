@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: "Svinm\xE5lla"
   LatinName: Chenopodium album
-  info: "\"Svinm\xE5lla (Chenopodium album) \xE4r en \xF6rt. Den f\xF6rekommer ofta,
-    som \"\"ogr\xE4s\"\", i tr\xE4dg\xE5rdsland och andra marker med bar jord. Bladen
-    kan anv\xE4ndas p\xE5 samma s\xE4tt som spenat. Svinm\xE5lla \xE4r vanlig i norra
-    Indien som gr\xF6da f\xF6r mat.[1] I engelska texter kallas den ibland vid sitt
-    hindi-namn bathua eller bathuwa.\""
+  info: "Svinm\xE5lla (Chenopodium album) \xE4r en \xF6rt. Den f\xF6rekommer ofta,
+    som ogr\xE4s, i tr\xE4dg\xE5rdsland och andra marker med bar jord. Bladen kan
+    anv\xE4ndas p\xE5 samma s\xE4tt som spenat. Svinm\xE5lla \xE4r vanlig i norra
+    Indien som gr\xF6da f\xF6r mat. I engelska texter kallas den ibland vid sitt
+    hindi-namn bathua eller bathuwa."
   sprites:
-  - {fileID: -2437244282602391618, guid: 2804dd9b223d8e2439154e4fd8cd12b7, type: 3}
+  - {fileID: 21300000, guid: 2804dd9b223d8e2439154e4fd8cd12b7, type: 3}
+  commonness: 1
+  feral: 0
   root: 2
   stem: 0
   leaf: 1

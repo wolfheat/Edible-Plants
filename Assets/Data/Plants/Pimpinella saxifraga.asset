@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Bockrot
   LatinName: Pimpinella saxifraga
-  info: "\"Bockrot, vanlig bockrot eller backanis (Pimpinella saxifraga) \xE4r fler\xE5rig
-    med en s\xE5 kallad \"\"m\xE5ngh\xF6vdad p\xE5lrot\"\", det vill s\xE4ga en kort
-    kandelaberstam, uppburen av p\xE5lroten. Den v\xE4xer allm\xE4nt p\xE5 torra
-    \xE4ngsbackar genom n\xE4stan hela Skandinavien. Roten \xE4r seg, smal och mycket
-    djupg\xE5ende, den har en br\xE4nnande aromatisk smak och brukades f\xF6rr som
-    ett magst\xE4rkande och sleml\xF6sande l\xE4kemedel, till te mot hosta med mera.
-    Den fanns med i den svenska farmakop\xE9n fr\xE5n 1775 fram till 1908 och s\xE5ldes
-    \xE4ven p\xE5 apoteken under de b\xE5da v\xE4rldskrigen. Ett extrakt av roten
-    ingick bland annat i \"\"Pimpinelladroppar\"\" mot heshet och halsont\""
+  info: "Bockrot, vanlig bockrot eller backanis (Pimpinella saxifraga) \xE4r fler\xE5rig.
+    Den v\xE4xer allm\xE4nt p\xE5 torra \xE4ngsbackar genom n\xE4stan hela Skandinavien.
+    Roten \xE4r seg, smal och mycket djupg\xE5ende, den har en br\xE4nnande aromatisk
+    smak och brukades f\xF6rr som ett magst\xE4rkande och sleml\xF6sande l\xE4kemedel,
+    till te mot hosta med mera. Den fanns med i den svenska farmakop\xE9n fr\xE5n
+    1775 fram till 1908 och s\xE5ldes \xE4ven p\xE5 apoteken under de b\xE5da v\xE4rldskrigen.
+    Ett extrakt av roten ingick bland annat i Pimpinelladroppar mot heshet och halsont."
   sprites:
-  - {fileID: 7071257622034440472, guid: 703d48f7b80cdb94b840915b1fb8d284, type: 3}
+  - {fileID: 21300000, guid: 703d48f7b80cdb94b840915b1fb8d284, type: 3}
+  commonness: 2
+  feral: 0
   root: 0
   stem: 1
   leaf: 1

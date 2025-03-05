@@ -19,11 +19,13 @@ MonoBehaviour:
     I Norge f\xF6rekommer den endast s\xF6der om fj\xE4llen. I \xF6vrigt \xE4r den
     inhemsk i n\xE4stan hela Europa."
   sprites:
-  - {fileID: -8108718806453631953, guid: 642481c475ae4524e995d0375781b13b, type: 3}
+  - {fileID: 21300000, guid: 642481c475ae4524e995d0375781b13b, type: 3}
+  commonness: 1
+  feral: 0
   root: 0
   stem: 0
   leaf: 0
   flower: 0
   seed: 0
   fruit: 0
-  avoid: 4
+  avoid: 2

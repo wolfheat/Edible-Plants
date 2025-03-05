@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
 public class ItemDictionary : MonoBehaviour
 {
     [Header("Questions")]
@@ -29,13 +29,18 @@ public class ItemDictionary : MonoBehaviour
 
     }
 
-    [ContextMenu("Reload Plants")]
-    private void LoadAllPlantsAssetDatas()
+    public void UpdatePlantsAssetDatas(List<QuestionData> list)
     {
         Debug.Log("Reloading Plants");
-        questions = PlantDataImporter.ReturnAllData();
+        questions = list;
         Debug.Log(questions.Count + " Plants found!");
         GenerateListOfAllAnswers();
+
+#if UNITY_EDITOR
+        EditorUtility.SetDirty(this); // Marks the ScriptableObject as modified
+        AssetDatabase.SaveAssets();   // Ensures the change is written to disk
+        AssetDatabase.Refresh();      // Refreshes the asset database
+#endif
     }
 
     private void GenerateListOfAllAnswers()

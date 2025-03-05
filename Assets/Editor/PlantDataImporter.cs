@@ -4,7 +4,6 @@ using System.IO;
 using System.Collections.Generic;
 using System.Text;
 using System;
-
 public class PlantDataImporter : EditorWindow
 {
     private const string CSV_PATH = "Assets/Data/Plants.csv";
@@ -118,28 +117,6 @@ public class PlantDataImporter : EditorWindow
 
         return spriteList.ToArray();
     }
-        
-    public static List<QuestionData> ReturnAllData()
-    {
-        List<QuestionData> datas = new();
-        
-        Debug.Log("Trying to read all data from library: ");
-
-        string[] files = Directory.GetFiles(SCRIPTABLE_OBJECT_FOLDER);
-
-        foreach (string file in files) {
-            if(!file.EndsWith(".asset"))
-                continue;
-
-            string assetPath = file.Replace(Application.dataPath, "").Replace("\\", "/");
-
-            QuestionData questionData = AssetDatabase.LoadAssetAtPath<QuestionData>(assetPath);
-
-            datas.Add(questionData);            
-        }
-
-        return datas;
-    }        
         
     private static void DeletePlantDataIfAvailable(string assetPath)
     {

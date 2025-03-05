@@ -19,7 +19,9 @@ MonoBehaviour:
     Sl\xE4ktet beskrevs f\xF6rst av Carl von Linn\xE9. I Sverige finns arterna bredkaveldun
     (T. latifolia) och smalkaveldun (T. angustifolia)"
   sprites:
-  - {fileID: 5104652042491954296, guid: 9c91a79d17eb4834594a63df28369321, type: 3}
+  - {fileID: 21300000, guid: 9c91a79d17eb4834594a63df28369321, type: 3}
+  commonness: 2
+  feral: 0
   root: 2
   stem: 0
   leaf: 0

@@ -19,7 +19,9 @@ MonoBehaviour:
     den sig, s\xE4rskilt n\xE4r det g\xE4ller blomningen. Den har n\xE4mligen mycket
     sm\xE5 blommor som till alla sina delar utom st\xE5ndarna \xE4r svartr\xF6da."
   sprites:
-  - {fileID: 5317554352654592240, guid: ef5906ece2a2a6547b7f71e9275b0aae, type: 3}
+  - {fileID: 21300000, guid: ef5906ece2a2a6547b7f71e9275b0aae, type: 3}
+  commonness: 2
+  feral: 0
   root: 0
   stem: 0
   leaf: 0

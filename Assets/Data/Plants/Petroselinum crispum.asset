@@ -22,12 +22,14 @@ MonoBehaviour:
     upp till 70\_cm h\xF6g. Bladen \xE4r upprepat parflikiga. Det f\xF6rekommer \xE4ven
     framodlade sorter med starkt krusiga blad, \"\"kruspersilja\"\".\""
   sprites:
-  - {fileID: 2695980355883331368, guid: f80e675b1e7f83044812edcf5223dd61, type: 3}
-  - {fileID: 571781933069663205, guid: 0ee7dabd47b479e468158344e1d8be58, type: 3}
+  - {fileID: 21300000, guid: f80e675b1e7f83044812edcf5223dd61, type: 3}
+  - {fileID: 21300000, guid: 0ee7dabd47b479e468158344e1d8be58, type: 3}
+  commonness: 2
+  feral: 1
   root: 0
   stem: 0
   leaf: 0
   flower: 0
   seed: 0
   fruit: 0
-  avoid: 1
+  avoid: 2

@@ -21,11 +21,13 @@ MonoBehaviour:
     Vildpalsternacka orsakar \xF6kad k\xE4nslighet f\xF6r solljus (fotosensibilisering)
     och hudskador, men kan \xE4ven orsaka f\xF6r\xE4ndringar i \xF6gonen."
   sprites:
-  - {fileID: 6908258244589935331, guid: 4208f59342ffdad42b5ccf805623596a, type: 3}
+  - {fileID: 21300000, guid: 4208f59342ffdad42b5ccf805623596a, type: 3}
+  commonness: 3
+  feral: 0
   root: 0
   stem: 0
   leaf: 0
   flower: 0
   seed: 0
   fruit: 0
-  avoid: 4
+  avoid: 2

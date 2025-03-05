@@ -19,8 +19,10 @@ MonoBehaviour:
     eteriska oljor. Under blomningstiden utvecklas ganska bleka stj\xE4lkar, med
     kraftiga f\xF6rtjockningar vid markytan."
   sprites:
-  - {fileID: 5860557796447182637, guid: b68b99fbe4ca8244a9bd7a00b558b62a, type: 3}
-  - {fileID: 6785551264750464284, guid: 86766d2b55771a14d997067157333095, type: 3}
+  - {fileID: 21300000, guid: b68b99fbe4ca8244a9bd7a00b558b62a, type: 3}
+  - {fileID: 21300000, guid: 86766d2b55771a14d997067157333095, type: 3}
+  commonness: 3
+  feral: 1
   root: 0
   stem: 1
   leaf: 1

@@ -18,8 +18,10 @@ MonoBehaviour:
     ingen nektar. Pollineras \xE4nd\xE5 av insekter, som bes\xF6ker blomman f\xF6r
     fr\xF6mj\xF6lets skull."
   sprites:
-  - {fileID: 6846916219557344911, guid: 2eba7597fd4fab5469137f798774f047, type: 3}
-  - {fileID: -6651572413669445005, guid: 207ce169cb203fc4b9b96d00e8ffba8f, type: 3}
+  - {fileID: 21300000, guid: 2eba7597fd4fab5469137f798774f047, type: 3}
+  - {fileID: 21300000, guid: 207ce169cb203fc4b9b96d00e8ffba8f, type: 3}
+  commonness: 1
+  feral: 0
   root: 2
   stem: 0
   leaf: 0

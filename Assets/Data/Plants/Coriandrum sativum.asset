@@ -19,8 +19,10 @@ MonoBehaviour:
     lukt och smak, som inte alla tycker om. Bladen anv\xE4nds i asiatisk matlagning
     ungef\xE4r som man i Sverige anv\xE4nder persilja."
   sprites:
-  - {fileID: -2078330492833172131, guid: be905a96da7595f40afa2744e184a6bb, type: 3}
-  - {fileID: 4716410367827166502, guid: 9584bed12b23a4c4299a79db386ebd36, type: 3}
+  - {fileID: 21300000, guid: be905a96da7595f40afa2744e184a6bb, type: 3}
+  - {fileID: 21300000, guid: 9584bed12b23a4c4299a79db386ebd36, type: 3}
+  commonness: 2
+  feral: 0
   root: 0
   stem: 0
   leaf: 1

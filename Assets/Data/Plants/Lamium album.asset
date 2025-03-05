@@ -23,7 +23,9 @@ MonoBehaviour:
     d\xE5 dessa samlas f\xF6r att anv\xE4ndas som k\xE5l, och de tv\xE5 v\xE4xer
     ofta tillsammans."
   sprites:
-  - {fileID: -7292844995259838396, guid: 9e1312115828aa445b35bd6ed31ed393, type: 3}
+  - {fileID: 21300000, guid: 9e1312115828aa445b35bd6ed31ed393, type: 3}
+  commonness: 2
+  feral: 0
   root: 0
   stem: 1
   leaf: 1

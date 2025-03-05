@@ -20,7 +20,9 @@ MonoBehaviour:
     och rotfrukt. Det \xE4r fr\xE4mst roten, stj\xE4lken och fr\xF6na som anv\xE4nds
     men \xE4ven blad kan anv\xE4ndas."
   sprites:
-  - {fileID: -4864736909078343048, guid: b7181ba5cec0d2844b82f657c97b33ac, type: 3}
+  - {fileID: 21300000, guid: b7181ba5cec0d2844b82f657c97b33ac, type: 3}
+  commonness: 2
+  feral: 0
   root: 1
   stem: 1
   leaf: 1

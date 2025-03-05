@@ -21,7 +21,9 @@ MonoBehaviour:
     och i Asien. Den f\xF6rekommer \xE4ven tidvis, som ogr\xE4s vid odlad mark, i
     Nordamerika."
   sprites:
-  - {fileID: -2834206861918281374, guid: a41c624c5a6880c44ac58517cba362cf, type: 3}
+  - {fileID: 21300000, guid: a41c624c5a6880c44ac58517cba362cf, type: 3}
+  commonness: 2
+  feral: 0
   root: 0
   stem: 1
   leaf: 1

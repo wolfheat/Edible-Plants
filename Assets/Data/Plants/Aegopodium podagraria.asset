@@ -21,8 +21,10 @@ MonoBehaviour:
     \xC4r d\xE4r vanlig i parker och gamla tr\xE4dg\xE5rdar, men mindre vanlig i
     lundskogar och p\xE5 in\xE4gor."
   sprites:
-  - {fileID: 5361100052602061425, guid: 23c7befbe7446d641b0beefa3dd03456, type: 3}
-  - {fileID: 4210836277969505105, guid: 23ff714aa500180448b4ed3e85f34384, type: 3}
+  - {fileID: 21300000, guid: 23c7befbe7446d641b0beefa3dd03456, type: 3}
+  - {fileID: 21300000, guid: 23ff714aa500180448b4ed3e85f34384, type: 3}
+  commonness: 1
+  feral: 0
   root: 0
   stem: 1
   leaf: 1
