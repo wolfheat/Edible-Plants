@@ -15,8 +15,15 @@ Mar 2025
 		* File can now be loaded even if it is opened in excel
 3/3		* Implemented Keyboard mode as separate game
 		* Typing in answer shows options for player
+4/3		* Added more plants to the library
+		* Added Commonness, Avoid, Feral
+
 
 		// make it so when only one character is supplied only words starting with that letter is shown?
+
+
+
+		* File has to be saved as CVS-UTH8 specificly to accommodate for ÅÄÖ characters plain CVS wont work
 
 
 

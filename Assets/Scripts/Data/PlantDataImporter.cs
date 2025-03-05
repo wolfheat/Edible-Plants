@@ -33,18 +33,23 @@ public class PlantDataImporter : EditorWindow
             string[] values = lines[i].Split(';');
             if (values.Length < 2) continue; // Ensure we have at least itemName & LatinName
 
+            // DATA LOOKS LIKE THIS
+            //      0	          1           2         3        4        5       6        7      8        9     10        11
+            // Latin Name	Swedish Name	Info	Vanlighet	Root	Stem	Leafs	Flower	Seeds	Berries	Avoid	Förvildad
+
             string latinName = values[0].Trim();
             string itemName = values[1].Trim();
-
             string info = values.Length > 2 ? values[2].Trim():"No Info!";
-
-            int[] edible = new int[5];
-            for (int j = 3; j < values.Length; j++) {
-                int index = j - 3;
-                Debug.Log("parsing:" + values[j]);
-                int value = values[j].Length == 0 ? 0 : Int32.Parse(values[j]);
+            int commonness = Int32.Parse(values[3]);
+            // Edibles 4-9
+            int[] edible = new int[7];
+            for (int j = 4; j < 7+4; j++) {
+                int index = j - 4;
+                //Debug.Log("parsing:" + values[j]);
+                int value = (j>=values.Length || values[j].Length == 0) ? 0 : Int32.Parse(values[j]);
                 edible[index] = value;
             }
+            bool feral = values[11]!="";
 
             // Find all matching images
             Sprite[] sprites = FindSpritesForPlant(latinName);
@@ -60,7 +65,7 @@ public class PlantDataImporter : EditorWindow
             }
 
             // Create or update ScriptableObject
-            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, sprites, edible);
+            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral);
 
         }
 
@@ -101,10 +106,9 @@ public class PlantDataImporter : EditorWindow
                 string assetPath = file.Replace(Application.dataPath, "").Replace("\\", "/");
                 Debug.Log("Asset Path: "+assetPath);
 
-
                 Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(assetPath);
                 if (sprite != null) {
-                    Debug.LogWarning("Loaded sprite: "+latinName+" at "+assetPath);
+                    Debug.Log("Loaded sprite: "+latinName+" at "+assetPath);
                     spriteList.Add(sprite);
                 }else
                     Debug.LogWarning("Could not load sprite: "+latinName+" at "+assetPath);
@@ -143,7 +147,7 @@ public class PlantDataImporter : EditorWindow
         }
     }
     
-    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, Sprite[] sprites, int[] edible)
+    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral)
     {
         Debug.Log("Create Or Update Plant Data: " + latinName);
         
@@ -165,6 +169,9 @@ public class PlantDataImporter : EditorWindow
         plantData.leaf = edible[2];
         plantData.flower = edible[3];
         plantData.seed = edible[4];
+        plantData.fruit = edible[5];
+        plantData.commonness = commonness;
+        plantData.feral = feral;
 
 
         if (!dataExists)

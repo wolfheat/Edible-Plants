@@ -6,8 +6,8 @@ public class TwoOptionGame : BaseGame
 {
     [SerializeField] private TextMeshProUGUI infoText;
 
-    private string[] parts = { "Root", "Stem", "Leaf", "Flower", "Seed" };
-
+    private string[] parts = { "Root", "Stem", "Leaf", "Flower", "Seed", "Fruit", "Avoid"};
+    private string feral = "Förvildad";
     private void SetInfoText()
     {
         infoText.text = activeQuestionData.info;
@@ -20,10 +20,17 @@ public class TwoOptionGame : BaseGame
         for (int i = 0; i < plantParts.Length; i++) {
             int part = plantParts[i];
             if (part == 1)                
-                infoText.text += $"<color=#29A284>{parts[i]} </color>";
+                infoText.text += $"<color=#29A284>{parts[i]} </color>"; // EAT RAW
             else if (part == 2)
-                infoText.text += $"<color=#985915>{parts[i]} </color>";
-        }
+                infoText.text += $"<color=#985915>{parts[i]} </color>"; // COOK
+            else if (part == 3)
+                infoText.text += $"<color=#C88E16>{parts[i]} </color>"; // COOK EXTENSIVELY / AVOID
+            else if (part == 4)
+                infoText.text += $"<color=#FF0000>{parts[i]} </color>"; // AVOID
+        }        
+        if(activeQuestionData.feral)
+            infoText.text += $"<color=#985915>{feral}</color>";
+
     }
 
     public override void LoadRandomQuestion()
