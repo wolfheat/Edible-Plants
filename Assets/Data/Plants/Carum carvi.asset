@@ -17,7 +17,7 @@ MonoBehaviour:
   info: "Kummin har en mycket l\xE5ng historia och kan sp\xE5ras tillbaka till sumererna,
     som kallade kryddan gamun. De torkade frukterna (ofta felaktigt ben\xE4mnda fr\xF6n)
     anv\xE4nds som krydda till exempelvis br\xF6d, korv, ost och soppor. De anv\xE4nds
-    ocks\xE5 f\xF6r smaks\xE4ttning av kryddat br\xE4nnvin (akvavit)."
+    ocks\xE5 f\xF6r smaks\xE4ttning av kryddat br\xE4nnvin (akvavit). "
   sprites:
   - {fileID: 21300000, guid: 9858465193dcc5149aa4442b54645317, type: 3}
   - {fileID: 21300000, guid: 7fae1ac823f812c46b24023d6dd22394, type: 3}

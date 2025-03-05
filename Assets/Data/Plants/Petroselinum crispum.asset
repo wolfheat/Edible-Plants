@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Persilja
   LatinName: Petroselinum crispum
-  info: "\"Mycket l\xE4tt att f\xF6rv\xE4xla med Vildpersilja som \xE4r mycket giftig.
+  info: "Mycket l\xE4tt att f\xF6rv\xE4xla med Vildpersilja som \xE4r mycket giftig.
     Undvik. Persilja \xE4r en tv\xE5\xE5rig v\xE4xt som blommar det andra \xE5ret.
     F\xF6rsta \xE5ret blir det bara en liten markn\xE4ra bladrosett. Persilja \xE4r
     mycket rik p\xE5 karoten (som omvandlas till A-vitamin i kroppen), B-vitaminer
     och C-vitamin samt j\xE4rn och kalcium. Den \xE4r robust och t\xE5lig. Kan bli
     upp till 70\_cm h\xF6g. Bladen \xE4r upprepat parflikiga. Det f\xF6rekommer \xE4ven
-    framodlade sorter med starkt krusiga blad, \"\"kruspersilja\"\".\""
+    framodlade sorter med starkt krusiga blad, kruspersilja."
   sprites:
   - {fileID: 21300000, guid: f80e675b1e7f83044812edcf5223dd61, type: 3}
   - {fileID: 21300000, guid: 0ee7dabd47b479e468158344e1d8be58, type: 3}

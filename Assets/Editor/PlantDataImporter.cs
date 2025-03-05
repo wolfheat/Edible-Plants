@@ -39,7 +39,8 @@ public class PlantDataImporter : EditorWindow
 
             string latinName = values[0].Trim();
             string itemName = values[1].Trim();
-            string info = values.Length > 2 ? values[2].Trim():"No Info!";
+            string info = FinalizeInfo(values[2]);
+
             int commonness = Int32.Parse(values[3]);
             // Edibles 4-9
             int[] edible = new int[7];
@@ -72,6 +73,42 @@ public class PlantDataImporter : EditorWindow
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
     }
+
+    private static string FinalizeInfo(string info)
+    {
+        // Removet any brackets section
+        string removedBrackets = RemoveBrackets(info);
+
+        // remove any other unwanted stuff...
+
+
+        return removedBrackets;
+    }
+
+    private static string RemoveBrackets(string info)
+    {
+        int brackets = 0;
+
+        char[] chars = info.ToCharArray();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < chars.Length; i++) {
+            char c = chars[i];
+            if (c == '[') {
+                brackets++;
+                continue;
+            }
+            else if (c == ']') {
+                brackets--;
+                continue;
+            }
+            else if (brackets == 0) {
+                sb.Append(c);
+            }
+        }
+        return sb.ToString();
+    }
+
+
 
     private static string[] ReadCsvWithSharedAccess(string path)
     {
