@@ -1,12 +1,23 @@
 # ninja log v5
+1813	1962	7628571427112208	F:/Unity Projects/GitHub/Edible Plants/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1x3t2z2p/obj/arm64-v8a/libgame.so	f1d50d3741607dc6
+1	1813	7628571425761320	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	f6ba66f39286b640
 72	276	7628571410379487	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	51b4bc4fdfff7c68
+17	1469	7628571422310419	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	445caf4b55660d09
+61	1379	7628571421440018	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	654b9fab48c40385
 279	491	7628571412439640	F:/Unity Projects/GitHub/Edible Plants/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1x3t2z2p/obj/arm64-v8a/libswappywrapper.so	c4d93914f41000b1
 42	1274	7628571420299200	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f09d1a25e9b2c216
 33	1278	7628571420329257	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	709eac0855c8570a
-9	1313	7628571420770320	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3feab16119871ea3
-61	1379	7628571421440018	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	654b9fab48c40385
 51	1461	7628571422210334	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	56a75fa6153b7948
-17	1469	7628571422310419	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	445caf4b55660d09
+9	1313	7628571420770320	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3feab16119871ea3
 24	1693	7628571424563268	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	81f17ad19dec9667
-1	1813	7628571425761320	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	f6ba66f39286b640
-1813	1962	7628571427112208	F:/Unity Projects/GitHub/Edible Plants/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1x3t2z2p/obj/arm64-v8a/libgame.so	f1d50d3741607dc6
+607	719	7628892940269168	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	51b4bc4fdfff7c68
+566	1335	7628892946369272	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f09d1a25e9b2c216
+3	1338	7628892946399297	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3feab16119871ea3
+578	1339	7628892946419323	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	709eac0855c8570a
+586	1391	7628892946889701	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	654b9fab48c40385
+600	1477	7628892947729294	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	56a75fa6153b7948
+560	1501	7628892947989751	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	445caf4b55660d09
+593	1684	7628892949823342	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	81f17ad19dec9667
+572	1801	7628892950979802	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	f6ba66f39286b640
+720	2039	7628892953378246	F:/Unity Projects/GitHub/Edible Plants/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1x3t2z2p/obj/arm64-v8a/libswappywrapper.so	c4d93914f41000b1
+1801	2325	7628892956169521	F:/Unity Projects/GitHub/Edible Plants/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1x3t2z2p/obj/arm64-v8a/libgame.so	f1d50d3741607dc6

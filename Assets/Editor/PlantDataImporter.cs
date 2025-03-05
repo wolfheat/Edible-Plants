@@ -13,6 +13,7 @@ public class PlantDataImporter : EditorWindow
     [MenuItem("Tools/Import Plant Data from Plants.cvs")]
     public static void ImportPlantData()
     {
+        Debug.Log("Updating Plant Data from Plants.cvs: ");
         if (!File.Exists(CSV_PATH)) {
             Debug.LogError("CSV file not found at: " + CSV_PATH);
             return;
@@ -29,7 +30,7 @@ public class PlantDataImporter : EditorWindow
 
         for (int i = 1; i < lines.Length; i++) // Skip header row
         {
-            Debug.Log("Line "+i+": " + lines[i]);
+            //Debug.Log("Line "+i+": " + lines[i]);
             string[] values = lines[i].Split(';');
             if (values.Length < 2) continue; // Ensure we have at least itemName & LatinName
 
@@ -72,6 +73,8 @@ public class PlantDataImporter : EditorWindow
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
+        Debug.Log("Updating Plant Data from Plants.cvs: COMPLETE");
+
     }
 
     private static string FinalizeInfo(string info)
@@ -141,11 +144,11 @@ public class PlantDataImporter : EditorWindow
                 
                 //string assetPath = Application.dataPath +"Assets/";
                 string assetPath = file.Replace(Application.dataPath, "").Replace("\\", "/");
-                Debug.Log("Asset Path: "+assetPath);
+                //Debug.Log("Asset Path: "+assetPath);
 
                 Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(assetPath);
                 if (sprite != null) {
-                    Debug.Log("Loaded sprite: "+latinName+" at "+assetPath);
+                    //Debug.Log("Loaded sprite: "+latinName+" at "+assetPath);
                     spriteList.Add(sprite);
                 }else
                     Debug.LogWarning("Could not load sprite: "+latinName+" at "+assetPath);
@@ -164,7 +167,7 @@ public class PlantDataImporter : EditorWindow
     
     private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral)
     {
-        Debug.Log("Create Or Update Plant Data: " + latinName);
+        //Debug.Log("Create Or Update Plant Data: " + latinName);
         
         string assetPath = SCRIPTABLE_OBJECT_FOLDER + latinName + ".asset";
         QuestionData plantData = AssetDatabase.LoadAssetAtPath<QuestionData>(assetPath);

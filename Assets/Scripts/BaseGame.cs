@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Drawing;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,7 +34,8 @@ public abstract class BaseGame : MonoBehaviour
 
     public virtual void AnswerOption(string answer)
     {
-        resultText.text = answer == activeQuestionData.ItemName ? "Correct!" : "Wrong!";        
+        // Make Correct Green and Wrong Red
+        resultText.text = (answer == activeQuestionData.ItemName) ? $"<color=#44FF44>Correct!</color>" : $"<color=#FF4444>Wrong!</color>";        
     }
 
 
