@@ -21,14 +21,12 @@ Mar 2025
 		[Android build: 122Mb] after compress to 512x512 images -> 52Mb have 29 plants (43 images)
 5/3		* Made a border around the game, added backgrounds to text answers
 		* Corrected text
-		* Make [] autoremoved from imported text?
+		* Brackets autoremoved from imported text?
+		* Pictures are now randomly flipped on X axis
 
 
-		* Make The pictures randomely flipped
 
 		// make it so when only one character is supplied only words starting with that letter is shown?
-
-
 
 		* File has to be saved as CVS-UTH8 specificly to accommodate for ÅÄÖ characters plain CVS wont work
 

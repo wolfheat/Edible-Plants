@@ -91,8 +91,11 @@ public class TwoOptionGame : BaseGame
             buttons[i].UpdateText(alternativeAnswers[i]);
 
         // Set Sprite
-        if (activeQuestionData.sprites.Length > 0)
+        if (activeQuestionData.sprites.Length > 0) {
             QuestionImage.sprite = activeQuestionData.sprites[0];
+            if(Random.Range(0,2)!=0)
+                QuestionImage.rectTransform.localScale = new Vector3(QuestionImage.rectTransform.localScale.x*-1, 1,1); // FLIP
+        }
 
         base.UpdateCurrentQuestionVisuals();
     }
