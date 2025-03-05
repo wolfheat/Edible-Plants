@@ -18,11 +18,9 @@ MonoBehaviour:
     allm\xE4nt f\xF6rekommer p\xE5 \xE4ngar och v\xE4gkanter genom st\xF6rre delen
     av Sveriges floraomr\xE5de, ungef\xE4r upp till polcirkeln. Den blommar under
     h\xF6gsommaren. Bj\xF6rnlokan kan orsaka stor sveda om den kommer i kontakt med
-    huden hos m\xE4nniskor[3]. Bj\xF6rnloka och j\xE4tteloka inneh\xE5ller furanokumariner
+    huden hos m\xE4nniskor. Bj\xF6rnloka och j\xE4tteloka inneh\xE5ller furanokumariner
     som \xE4r irriterande p\xE5 hud, s\xE4rskilt om huden uts\xE4tts f\xF6r solbestr\xE5lning
-    (fotosensibilisering).[4] Br\xE4nnskadeliknande symtom med kraftig hudirritation,
-    rodnad och bl\xE5sor, som kan bli stora och sm\xE4rtsamma. Besv\xE4ren kan kvarst\xE5
-    i veckor, eventuellt \xE4ven \xE4rrbildning och m\xF6rkf\xE4rgning av huden."
+    (fotosensibilisering)."
   sprites:
   - {fileID: -87866391490923851, guid: a421abe70c7b2d0499343633d1625a57, type: 3}
   root: 0
@@ -30,3 +28,5 @@ MonoBehaviour:
   leaf: 0
   flower: 0
   seed: 0
+  fruit: 0
+  avoid: 4

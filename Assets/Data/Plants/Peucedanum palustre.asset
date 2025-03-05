@@ -15,9 +15,9 @@ MonoBehaviour:
   ItemName: "K\xE4rrsilja"
   LatinName: Peucedanum palustre
   info: "K\xE4rrsiljan \xE4r omkring en meter h\xF6g och f\xF6rekommer allm\xE4nt
-    p\xE5 k\xE4rr\xE4ngar och str\xE4nder i s\xE5 gott som hela Sverige och Finland.[1][2]
-    I Norge f\xF6rekommer den endast s\xF6der om fj\xE4llen.[2] I \xF6vrigt \xE4r
-    den inhemsk i n\xE4stan hela Europa."
+    p\xE5 k\xE4rr\xE4ngar och str\xE4nder i s\xE5 gott som hela Sverige och Finland.
+    I Norge f\xF6rekommer den endast s\xF6der om fj\xE4llen. I \xF6vrigt \xE4r den
+    inhemsk i n\xE4stan hela Europa."
   sprites:
   - {fileID: -8108718806453631953, guid: 642481c475ae4524e995d0375781b13b, type: 3}
   root: 0
@@ -25,3 +25,5 @@ MonoBehaviour:
   leaf: 0
   flower: 0
   seed: 0
+  fruit: 0
+  avoid: 4

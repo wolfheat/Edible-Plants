@@ -30,6 +30,7 @@ public class PlantDataImporter : EditorWindow
 
         for (int i = 1; i < lines.Length; i++) // Skip header row
         {
+            Debug.Log("Line "+i+": " + lines[i]);
             string[] values = lines[i].Split(';');
             if (values.Length < 2) continue; // Ensure we have at least itemName & LatinName
 
@@ -170,6 +171,8 @@ public class PlantDataImporter : EditorWindow
         plantData.flower = edible[3];
         plantData.seed = edible[4];
         plantData.fruit = edible[5];
+        plantData.avoid = edible[6];
+
         plantData.commonness = commonness;
         plantData.feral = feral;
 

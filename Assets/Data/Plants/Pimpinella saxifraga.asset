@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
+  m_Name: Pimpinella saxifraga
+  m_EditorClassIdentifier: 
+  ItemName: Bockrot
+  LatinName: Pimpinella saxifraga
+  info: "\"Bockrot, vanlig bockrot eller backanis (Pimpinella saxifraga) \xE4r fler\xE5rig
+    med en s\xE5 kallad \"\"m\xE5ngh\xF6vdad p\xE5lrot\"\", det vill s\xE4ga en kort
+    kandelaberstam, uppburen av p\xE5lroten. Den v\xE4xer allm\xE4nt p\xE5 torra
+    \xE4ngsbackar genom n\xE4stan hela Skandinavien. Roten \xE4r seg, smal och mycket
+    djupg\xE5ende, den har en br\xE4nnande aromatisk smak och brukades f\xF6rr som
+    ett magst\xE4rkande och sleml\xF6sande l\xE4kemedel, till te mot hosta med mera.
+    Den fanns med i den svenska farmakop\xE9n fr\xE5n 1775 fram till 1908 och s\xE5ldes
+    \xE4ven p\xE5 apoteken under de b\xE5da v\xE4rldskrigen. Ett extrakt av roten
+    ingick bland annat i \"\"Pimpinelladroppar\"\" mot heshet och halsont\""
+  sprites:
+  - {fileID: 7071257622034440472, guid: 703d48f7b80cdb94b840915b1fb8d284, type: 3}
+  root: 0
+  stem: 1
+  leaf: 1
+  flower: 0
+  seed: 0
+  fruit: 0
+  avoid: 0

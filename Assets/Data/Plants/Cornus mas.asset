@@ -16,19 +16,9 @@ MonoBehaviour:
   LatinName: Cornus mas
   info: "K\xF6rsb\xE4rskornell (Cornus mas) \xE4r en v\xE4xtart i familjen kornellv\xE4xter
     och f\xF6rekommer naturligt fr\xE5n centrala och syd\xF6stra Europa till Kaukasus.
-    I Sverige f\xF6rekommer den inte naturligt, utan som prydnadsv\xE4xt eller som
-    b\xE4rbuske i tr\xE4dg\xE5rdar och parker. K\xF6rsb\xE4rskornell \xE4r en l\xF6vf\xE4llande
-    buske (4 meter h\xF6g) eller ett litet tr\xE4d (8 meter), med bred och ganska
-    l\xE5g krona. Buskformen har fler uppr\xE4ttst\xE5ende huvudgrenar, medan tr\xE4dformen
-    har en genomg\xE5ende stam och \xF6verh\xE4ngande huvudgrenar som g\xE5r ganska
-    v\xE5gr\xE4tt ut fr\xE5n huvudstammen. Barken \xE4r f\xF6rst gr\xE5brun med gr\xF6na
-    inslag. Senare blir den ljusbrun med spridda korkporer och till sist \xE4r den
-    gr\xE5 och uppsprickande. Knopparna \xE4r motsatt placerade p\xE5 grenen, bruna
-    och spetsiga (blomknopparna \xE4r dock runda och utsp\xE4rrade). Avst\xE5ndet
-    mellan knopparna \xE4r l\xE5ngt. Bladen \xE4r \xE4ggrunda, med l\xE5ng spets.
-    Bladkanten \xE4r helbreddad och bladets \xE5dror \xE4r b\xE5gformade. \xD6versidan
-    \xE4r skinande gr\xF6n, medan undersidan \xE4r bl\xE5gr\xF6n. H\xF6stf\xE4rgen
-    \xE4r brungul."
+    K\xF6rsb\xE4rskornell \xE4r en l\xF6vf\xE4llande buske (4 meter h\xF6g) eller
+    ett litet tr\xE4d (8 meter), med bred och ganska l\xE5g krona. Bladen \xE4r \xE4ggrunda,
+    med l\xE5ng spets."
   sprites:
   - {fileID: -974705514220391619, guid: 1a9369ff754538749a3edb9fe09eb278, type: 3}
   - {fileID: -8522305132242032273, guid: ec739634d783d1741bc9f560da733020, type: 3}
@@ -37,3 +27,5 @@ MonoBehaviour:
   leaf: 0
   flower: 0
   seed: 0
+  fruit: 1
+  avoid: 0

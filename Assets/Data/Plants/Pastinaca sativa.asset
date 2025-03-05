@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Palsternacka
   LatinName: Pastinaca sativa
-  info: "\"Palsternacka odlades redan i antikens Grekland. I Sverige omtalas den
-    p\xE5 1500-talet, men tycks ha odlats l\xE5ngt tidigare, och var under medeltiden
-    och ren\xE4ssansen betydligt mer popul\xE4r som gr\xF6nsak \xE4n idag. Den f\xF6rekommer
+  info: "Palsternacka odlades redan i antikens Grekland. I Sverige omtalas den p\xE5
+    1500-talet, men tycks ha odlats l\xE5ngt tidigare, och var under medeltiden och
+    ren\xE4ssansen betydligt mer popul\xE4r som gr\xF6nsak \xE4n idag. Den f\xF6rekommer
     ofta i v\xE4g och dikeskanter och upptr\xE4der \xE4ven som ogr\xE4s. Enligt SVA
-    \"\"Vildpalsternacka orsakar \xF6kad k\xE4nslighet f\xF6r solljus (fotosensibilisering)
-    och hudskador, men kan \xE4ven orsaka f\xF6r\xE4ndringar i \xF6gonen\"\".\""
+    Vildpalsternacka orsakar \xF6kad k\xE4nslighet f\xF6r solljus (fotosensibilisering)
+    och hudskador, men kan \xE4ven orsaka f\xF6r\xE4ndringar i \xF6gonen."
   sprites:
   - {fileID: 6908258244589935331, guid: 4208f59342ffdad42b5ccf805623596a, type: 3}
   root: 0
@@ -27,3 +27,5 @@ MonoBehaviour:
   leaf: 0
   flower: 0
   seed: 0
+  fruit: 0
+  avoid: 4

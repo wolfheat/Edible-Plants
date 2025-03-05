@@ -6,6 +6,7 @@ public class QuestionData : ScriptableObject
     [Header("Main Info")]
     public string ItemName;
     public string LatinName;
+    [TextArea(15,20)]
     public string info;
     public Sprite[] sprites;
 
@@ -19,8 +20,9 @@ public class QuestionData : ScriptableObject
     public int leaf;
     public int flower;
     public int seed;
-    internal int fruit;
+    public int fruit;
+    public int avoid;
 
-    public int[] PlantParts => new int[]{root,stem,leaf,flower,seed};
+    public int[] PlantParts => new int[]{root,stem,leaf,flower,seed,fruit,avoid};
 
 }

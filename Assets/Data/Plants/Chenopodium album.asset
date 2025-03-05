@@ -26,3 +26,5 @@ MonoBehaviour:
   leaf: 1
   flower: 0
   seed: 1
+  fruit: 0
+  avoid: 0

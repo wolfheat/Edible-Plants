@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
   m_Name: Spergula arvensis
   m_EditorClassIdentifier: 
-  ItemName: "\xC5kerspergel"
+  ItemName: "\xC5kersp\xE4rgel"
   LatinName: Spergula arvensis
   info: "\xC5kersp\xE4rgel (Spergula arvensis\_L.) \xE4r en ett\xE5rig l\xE5gv\xE4xande
     \xF6rt. Ursprungligen stavades svenska namnet \xE5kerspergel."
@@ -24,3 +24,5 @@ MonoBehaviour:
   leaf: 1
   flower: 0
   seed: 1
+  fruit: 0
+  avoid: 0
