@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: "Hundk\xE4x"
   LatinName: Anthriscus sylvestris
-  info: "Hundk\xE4x (Anthriscus sylvestris) (L.) Hoffm. \xE4r en allm\xE4nt f\xF6rekommande
-    v\xE4xt som tillh\xF6r sl\xE4ktet sm\xE5k\xF6rvlar (Anthriscus). I Sverige f\xF6rekommer
+  info: "Hundk\xE4x (Anthriscus sylvestris) \xE4r en allm\xE4nt f\xF6rekommande v\xE4xt
+    som tillh\xF6r sl\xE4ktet sm\xE5k\xF6rvlar (Anthriscus). I Sverige f\xF6rekommer
     hundk\xE4x allm\xE4nt i hela landet och utg\xF6r den mest f\xF6rekommande arten
     ur familjen flockblommiga v\xE4xter. Stundtals g\xE5r den till och med att \xE5terfinna
     ovanf\xF6r tr\xE4dgr\xE4nsen, dock enbart tillf\xE4lligt. Hundk\xE4x kan framf\xF6rallt
@@ -26,6 +26,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3bde1b1b681a1f84aa8f28b16345adaa, type: 3}
   commonness: 1
   feral: 0
+  protectedPlant: 0
   root: 2
   stem: 0
   leaf: 2

@@ -23,6 +23,19 @@ Mar 2025
 		* Corrected text
 		* Brackets autoremoved from imported text?
 		* Pictures are now randomly flipped on X axis
+		* Fixed Keyboard mode
+6/3		* Added disclamer text
+		* Added more plants [total 50, pictures: 78]
+		[Android Build: 72Mb] have 50 plants (78 images)
+
+
+
+DISCLAMER TEXT
+Denna App bör användas med försiktighet. Även då ansträngning har gjorts för att säkerställa att den information som förmedlas är korrekt kan det ha smugit sig in fel antingen vid skapandet av den eller från de källor som använts. Dubbelkolla därför själv all information och läs på om växterna innan du förtär dem. Inta dessutom inga stora mängder	för att minimera skadorna ifall du av misstag har gjort en förväxling. 
+
+Undvik att plocka växter som växer på banvallar eller längs dikeskanter vid vägar då det ofta använts besprutningsmedel på dessa platser.
+
+Du bör även kontakta markägaren innan du plockar växterna. Plocka aldrig fridlysta blommor eller växter.
 
 
 

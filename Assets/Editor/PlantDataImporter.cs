@@ -27,12 +27,13 @@ public class PlantDataImporter : EditorWindow
         //string[] lines = File.ReadAllLines(CSV_PATH);
         string[] lines = ReadCsvWithSharedAccess(CSV_PATH);
 
-
+        int updatedItems = 0;
         for (int i = 1; i < lines.Length; i++) // Skip header row
         {
             //Debug.Log("Line "+i+": " + lines[i]);
             string[] values = lines[i].Split(';');
             if (values.Length < 2) continue; // Ensure we have at least itemName & LatinName
+            if (values[0].Length == 0) continue;
 
             // DATA LOOKS LIKE THIS
             //      0	          1           2         3        4        5       6        7      8        9     10        11
@@ -41,7 +42,7 @@ public class PlantDataImporter : EditorWindow
             string latinName = values[0].Trim();
             string itemName = values[1].Trim();
             string info = FinalizeInfo(values[2]);
-
+            Debug.Log("parsing commonness [" + values[0] +"]: " + values[3]);
             int commonness = Int32.Parse(values[3]);
             // Edibles 4-9
             int[] edible = new int[7];
@@ -52,6 +53,7 @@ public class PlantDataImporter : EditorWindow
                 edible[index] = value;
             }
             bool feral = values[11]!="";
+            bool protectedPlant = values[12]!="";
 
             // Find all matching images
             Sprite[] sprites = FindSpritesForPlant(latinName);
@@ -67,13 +69,13 @@ public class PlantDataImporter : EditorWindow
             }
 
             // Create or update ScriptableObject
-            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral);
-
+            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral, protectedPlant);
+            updatedItems++;
         }
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("Updating Plant Data from Plants.cvs: COMPLETE");
+        Debug.Log("Updating Plant Data from Plants.cvs: COMPLETE ["+updatedItems+"]");
 
     }
 
@@ -165,7 +167,7 @@ public class PlantDataImporter : EditorWindow
         }
     }
     
-    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral)
+    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral, bool protectedPlant)
     {
         //Debug.Log("Create Or Update Plant Data: " + latinName);
         
@@ -192,6 +194,7 @@ public class PlantDataImporter : EditorWindow
 
         plantData.commonness = commonness;
         plantData.feral = feral;
+        plantData.protectedPlant = protectedPlant;
 
 
         if (!dataExists)

@@ -24,6 +24,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 85bbb90ea8688e24eaec96d1bedfbe67, type: 3}
   commonness: 1
   feral: 0
+  protectedPlant: 0
   root: 0
   stem: 0
   leaf: 0

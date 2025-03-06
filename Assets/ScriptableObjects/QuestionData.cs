@@ -13,6 +13,7 @@ public class QuestionData : ScriptableObject
     [Header("Availability")]
     public int commonness;
     public bool feral;
+    public bool protectedPlant;
 
     [Header("Edible Parts")]
     public int root;

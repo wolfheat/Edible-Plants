@@ -4,14 +4,27 @@ using UnityEngine;
 public class KeyboardGame : BaseGame
 {
 
+    [Header("Virtual Keyboard")]
+    [SerializeField] protected GameObject keyboard;
+
     public override void LoadRandomQuestion()
     {
         GetRandomQuestion();
+
+        keyboard.SetActive(true);
 
         // Reset input
 
         UpdateCurrentQuestionVisuals();
 
+    }
+
+    public override void AnswerOption(string answer)
+    {
+        base.AnswerOption(answer);
+
+        // Remove the keyboard here
+        keyboard.SetActive(false);
     }
 
     private void CreateBestButton(int alternatives = 1)
