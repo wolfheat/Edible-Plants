@@ -55,6 +55,8 @@ public class PlantDataImporter : EditorWindow
             bool feral = values[11]!="";
             bool protectedPlant = values[12]!="";
 
+            int treeBush = values[13].Length > 0 ? Int32.Parse(values[13]):0;
+
             // Find all matching images
             Sprite[] sprites = FindSpritesForPlant(latinName);
 
@@ -69,7 +71,7 @@ public class PlantDataImporter : EditorWindow
             }
 
             // Create or update ScriptableObject
-            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral, protectedPlant);
+            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral, protectedPlant, treeBush);
             updatedItems++;
         }
 
@@ -167,7 +169,7 @@ public class PlantDataImporter : EditorWindow
         }
     }
     
-    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral, bool protectedPlant)
+    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral, bool protectedPlant, int treeBush)
     {
         //Debug.Log("Create Or Update Plant Data: " + latinName);
         
@@ -191,11 +193,13 @@ public class PlantDataImporter : EditorWindow
         plantData.seed = edible[4];
         plantData.fruit = edible[5];
         plantData.avoid = edible[6];
+        plantData.treeBush = treeBush;
 
         plantData.commonness = commonness;
         plantData.feral = feral;
         plantData.protectedPlant = protectedPlant;
 
+        plantData.CreateCategories(); 
 
         if (!dataExists)
             AssetDatabase.CreateAsset(plantData,assetPath);

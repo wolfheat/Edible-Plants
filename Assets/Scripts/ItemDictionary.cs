@@ -8,6 +8,8 @@ public class ItemDictionary : MonoBehaviour
 {
     [Header("Questions")]
     [SerializeField] List<QuestionData> questions;
+    
+    List<QuestionData> selectedQuestions = new();
 
     [Header("Singleton")]
     public static ItemDictionary Instance { get; private set; }
@@ -50,19 +52,29 @@ public class ItemDictionary : MonoBehaviour
             questionAnswers[i] = questions[i].ItemName;        
         Debug.Log("Generating "+questionAnswers.Length+" question Answers.");
     }
+    
+    public void GenerateSelectedListOfAllAnswers()
+    {
+        
+        selectedQuestions.Clear();
+        selectedQuestions = questions.Where(x => (x.CategoriesBinary&Settings.Instance.SelectedCategoriesBinary)!=0).ToList();
+
+
+        Debug.Log("Generating List Of Selected questions: "+ selectedQuestions.Count+" question Answers.");
+    }
 
     public static QuestionData GetRandomQuestionData()
     {
         // Make sure the dictionary exists
-        if (Instance == null || Instance.questions.Count == 0) {
+        if (Instance == null || Instance.selectedQuestions.Count == 0) {
             Debug.LogWarning("Item Dictionary does not have any items in it.");
             return null;
         }
 
         // Get random index from the dictionary
-        int index = Random.Range(0, Instance.questions.Count);
-        Debug.Log("Getting question index "+index+" from the quesions of length "+questionAnswers.Length+".");
-        return Instance.questions[index];
+        int index = Random.Range(0, Instance.selectedQuestions.Count);
+        Debug.Log("Getting question index "+index+" from the quesions of length "+ Instance.selectedQuestions.Count+".");
+        return Instance.selectedQuestions[index];
     }
 
     internal static List<string> GetRandomWrongAnswerStrings(string itemName, int amt)

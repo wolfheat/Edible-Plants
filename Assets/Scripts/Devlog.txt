@@ -26,7 +26,16 @@ Mar 2025
 		* Fixed Keyboard mode
 6/3		* Added disclamer text
 		* Added more plants [total 50, pictures: 78]
-		[Android Build: 72Mb] have 50 plants (78 images)
+		[Android Build: 72Mb] have 50 plants (78 images) ökning / bild = 0.57Mb/bild
+		* Basic functionality for Selecting categories
+		* List of Enabled Categories use Binary int now
+		* Categories now are selected proper
+
+		* Make sure imported data contains Categories
+
+
+
+		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
 
 
 

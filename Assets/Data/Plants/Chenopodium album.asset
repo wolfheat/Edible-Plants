@@ -31,3 +31,5 @@ MonoBehaviour:
   seed: 1
   fruit: 0
   avoid: 0
+  treeBush: 0
+  CategoriesBinary: 20

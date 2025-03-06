@@ -17,11 +17,10 @@ MonoBehaviour:
   info: "Spr\xE4ng\xF6rt \xE4r k\xE4nd f\xF6r att vara en av de giftigaste \xF6rterna
     som finns i den svenska floran. Hela v\xE4xten \xE4r mycket giftig, men det \xE4r
     i roten och nedre delen av stj\xE4lken som giftet finns koncentrerat i v\xE4xtsaften.
-    De giftiga kemiska f\xF6reningarna \xE4r cicutoxin och cicutol, som \xE4ven vid
-    sm\xE5 m\xE4ngder ger epilepsiliknande krampanfall och kan leda till d\xF6den.
     Framf\xF6r allt v\xE4xer den i v\xE5tmarker av olika slag, dess utbredning i
     Norden \xE4r \xF6ver n\xE4stan hela regionen utom i fj\xE4lltrakter samt l\xE4ngst
-    i norr. Hela v\xE4xten \xE4r mycket giftig, i synnerhet den tjocka rotstammen."
+    i norr. Hela v\xE4xten \xE4r mycket giftig, i synnerhet den tjocka rotstammen.
+    Kan l\xE4tt f\xF6rv\xE4xlas med Od\xF6rt, Vattenm\xE4rke samt Hundk\xE4x "
   sprites:
   - {fileID: 21300000, guid: 0a366f3812be33c458afd2ed68334ace, type: 3}
   - {fileID: 21300000, guid: 2b7c9f5a49dd32849ae9710a7c65f6e5, type: 3}
@@ -35,3 +34,5 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 1
+  treeBush: 0
+  CategoriesBinary: 32
