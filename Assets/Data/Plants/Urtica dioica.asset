@@ -16,7 +16,12 @@ MonoBehaviour:
   LatinName: Urtica dioica
   info: "Br\xE4nn\xE4ssla (Urtica dioica) \xE4r en art i familjen n\xE4sselv\xE4xter.
     Arten \xE4r allm\xE4n \xF6ver hela Nordeuropa, men f\xF6rekommer \xE4ven i \xF6vriga
-    Europa, Asien, Nordafrika och Nordamerika."
+    Europa, Asien, Nordafrika och Nordamerika. N\xE4sslorna v\xE4xer i n\xE4ringsrik
+    jord och lagrar in nitrater vilket g\xF6r att vissa anser att man ej b\xF6r \xE4ta
+    f\xF6r mycket utav dem. Blad och skott hos unga plantor g\xF6r sig b\xE4st efter
+    kokning eller f\xF6rv\xE4llning. Sm\xE5 plantor ska \xE4ven g\xE5 att \xE4tas
+    r\xE5a. De kan \xE4ven blandas i n\xE4r man g\xF6r br\xF6d. Stammen kan anv\xE4ndas
+    till att g\xF6ra rep. Ettern\xE4sslan kan anv\xE4ndas p\xE5 samma s\xE4tt."
   sprites:
   - {fileID: 21300000, guid: a0dd6eeef51a245408d08772dfc1e8b4, type: 3}
   commonness: 1

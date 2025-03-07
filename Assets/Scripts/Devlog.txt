@@ -30,8 +30,11 @@ Mar 2025
 		* Basic functionality for Selecting categories
 		* List of Enabled Categories use Binary int now
 		* Categories now are selected proper
+7/3		* Make sure imported data contains Categories
+		* Added 20 plants [total 70, pictures: 106]
+		[Android Build: 90Mb] have 70 plants (106 images) ökning / bild = +0.64Mb/bild
 
-		* Make sure imported data contains Categories
+
 
 
 
