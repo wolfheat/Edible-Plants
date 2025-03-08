@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public enum Languages {English,Svenska,Norsk,Suomi};
 public class Settings : MonoBehaviour
 {
     public List<Category> SelectedCategories { get; set; }
     public int SelectedCategoriesBinary { get; set; }
 	public static Settings Instance { get; private set; }
 
+    public int LanguageIndex { get; set; } = 1;
+    public string Language => Enum.GetName(typeof(Languages), LanguageIndex);
 
     [Header("Answer Colors")]
     [SerializeField] public Color CorrectColor;
@@ -37,4 +40,14 @@ public class Settings : MonoBehaviour
     }
 
     internal void AddAllCategories() => SelectedCategoriesBinary = Enum.GetValues(typeof(Category)).Cast<int>().Sum();
+
+    internal void SwapLanguage()
+    {
+        Debug.Log("Swapping Language");
+        LanguageIndex += 1;
+        if(LanguageIndex >= Enum.GetNames(typeof(Languages)).Length)
+            LanguageIndex = 0;
+        Debug.Log("Language = "+Language);
+
+    }
 }

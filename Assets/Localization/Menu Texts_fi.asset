@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Menu Texts_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: 4838af39cf0d8ba4494b3be333487952, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 556022362112
+    m_Localized: Suomi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9497980694528
+    m_Localized: Aloita
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10066824785920
+    m_Localized: Asetukset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10181304119296
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11412961488896
+    m_Localized: Lopettaa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18374927314944
+    m_Localized: Luokat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17956595822592
+    m_Localized: "N\xE4pp\xE4imist\xF6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18707846000640
+    m_Localized: Takaisin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18853975552000
+    m_Localized: Kaksi vaihtoehtoa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19142589804544
+    m_Localized: Pelivaihtoehdot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21335292243968
+    m_Localized: Kieli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21920519286784
+    m_Localized: Nollaa tilastot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22118557544448
+    m_Localized: "\xC4\xE4ni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23431672492032
+    m_Localized: "Sovelluksen on luonut \r\nwolfheat "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25216957018112
+    m_Localized: "T\xE4t\xE4 sovellusta tulee k\xE4ytt\xE4\xE4 varovaisesti. Vaikka
+      tietojen oikeellisuus on pyritty varmistamaan, voi niiss\xE4 silti olla virheit\xE4
+      joko luomisvaiheessa tai k\xE4ytetyiss\xE4 l\xE4hteiss\xE4. Tarkista siis aina
+      itse tiedot ja tutustu kasveihin ennen niiden sy\xF6mist\xE4. \xC4l\xE4 my\xF6sk\xE4\xE4n
+      sy\xF6 suuria m\xE4\xE4ri\xE4, jotta minimoit riskit, jos olet vahingossa poiminut
+      v\xE4\xE4r\xE4n kasvin.\r\n\r\nV\xE4lt\xE4 kasvien ker\xE4\xE4mist\xE4 rautateiden
+      varsilta tai tienpientareilta, sill\xE4 niill\xE4 k\xE4ytet\xE4\xE4n usein
+      torjunta-aineita.\r\n\r\nSinun tulisi my\xF6s ottaa yhteytt\xE4 maanomistajaan
+      ennen kasvien poimimista. \xC4l\xE4 koskaan poimi rauhoitettuja kukkia tai
+      kasveja."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25470192316416
+    m_Localized: "Hyv\xE4ksy\xE4!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25687784419328
+    m_Localized: DISCLAMER!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

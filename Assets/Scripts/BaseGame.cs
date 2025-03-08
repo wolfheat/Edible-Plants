@@ -22,7 +22,8 @@ public abstract class BaseGame : MonoBehaviour
     protected QuestionData activeQuestionData = null;
 
 
-    private string[] parts = { "Root", "Stem", "Leaf", "Flower", "Seed", "Fruit", "Avoid" };
+    private string[] parts = { "Rot", "Stjälk", "Blad", "Blommor", "Frö", "Frukt", "Undvik" };
+    //private string[] parts = { "Root", "Stem", "Leaf", "Flower", "Seed", "Fruit", "Avoid" };
     private string feral = "Förvildad";
     private string exchange = "Förväxlingsrisk";
     private string toxic = "Giftig";
@@ -35,7 +36,8 @@ public abstract class BaseGame : MonoBehaviour
         infoTextHeaderLatin.text = "(" + activeQuestionData.LatinName + ")"; // Italic
         infoText.text = activeQuestionData.info;
 
-        infoText.text += "\n\n Edible Parts: ";
+        infoText.text += "\n\nÄtliga Delar: ";
+        //infoText.text += "\n\n Edible Parts: ";
 
         int[] plantParts = activeQuestionData.PlantParts;
 

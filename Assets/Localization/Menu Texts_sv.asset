@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Menu Texts_sv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: sv
+  m_SharedData: {fileID: 11400000, guid: 4838af39cf0d8ba4494b3be333487952, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 556022362112
+    m_Localized: Svenska
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9497980694528
+    m_Localized: Starta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10066824785920
+    m_Localized: "Inst\xE4llningar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10181304119296
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11412961488896
+    m_Localized: Avsluta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17956595822592
+    m_Localized: Tangentbord
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18374927314944
+    m_Localized: Kategorier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18707846000640
+    m_Localized: Tillbaka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18853975552000
+    m_Localized: "Tv\xE5 Val"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19142589804544
+    m_Localized: Spelvarianter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21335292243968
+    m_Localized: "Spr\xE5k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21920519286784
+    m_Localized: "\xC5terst\xE4ll Stats"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22118557544448
+    m_Localized: Ljud
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23431672492032
+    m_Localized: "Appen \xE4r utvecklad av wolfheat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25216957018112
+    m_Localized: "Denna App b\xF6r anv\xE4ndas med f\xF6rsiktighet. \xC4ven d\xE5
+      anstr\xE4ngning har gjorts f\xF6r att s\xE4kerst\xE4lla att den information
+      som f\xF6rmedlas \xE4r korrekt kan det ha smugit sig in fel antingen vid skapandet
+      av den eller fr\xE5n de k\xE4llor som anv\xE4nts. Dubbelkolla d\xE4rf\xF6r
+      sj\xE4lv all information och l\xE4s p\xE5 om v\xE4xterna innan du f\xF6rt\xE4r
+      dem. Inta dessutom inga stora m\xE4ngder\tf\xF6r att minimera skadorna ifall
+      du av misstag har gjort en f\xF6rv\xE4xling. \n\r\nUndvik att plocka v\xE4xter
+      som v\xE4xer p\xE5 banvallar eller l\xE4ngs dikeskanter vid v\xE4gar d\xE5
+      det ofta anv\xE4nts besprutningsmedel p\xE5 dessa platser.\r\n\nDu b\xF6r \xE4ven
+      kontakta mark\xE4garen innan du plockar v\xE4xterna. Plocka aldrig fridlysta
+      blommor eller v\xE4xter.\r\n\t\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25470192316416
+    m_Localized: Acceptera!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25687784419328
+    m_Localized: DISCLAMER!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
