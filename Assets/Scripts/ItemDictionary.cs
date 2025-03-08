@@ -28,7 +28,7 @@ public class ItemDictionary : MonoBehaviour
         Debug.Log("Defining Item Dictionary Instance");
         Debug.Log("ItemDictionary start has "+questions.Count+" items.");
         GenerateListOfAllAnswers();
-
+        GenerateSelectedListOfAllAnswers();
     }
 
     public void UpdatePlantsAssetDatas(List<QuestionData> list)
