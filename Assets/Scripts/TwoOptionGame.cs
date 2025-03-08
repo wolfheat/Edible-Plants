@@ -6,12 +6,12 @@ public class TwoOptionGame : BaseGame
 {
     public override void LoadRandomQuestion()
     {
+        base.LoadRandomQuestion();
         GetRandomQuestion();
 
         infoObject.SetActive(false);
 
         UpdateCurrentQuestionVisuals();
-
     }
 
     protected override void UpdateCurrentQuestionVisuals()

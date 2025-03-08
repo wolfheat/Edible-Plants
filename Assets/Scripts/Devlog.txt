@@ -37,7 +37,8 @@ Mar 2025
 		[Android Build: 102Mb] have 80 plants (121 images)
 		[Android Build: 74Mb] Image compression 256 for pictures
 		* Fixed navigation button size
-
+		* Fixed Color automation in settings values
+		* Fixed answer buttons position and colliders
 
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare

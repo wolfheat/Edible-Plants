@@ -9,6 +9,8 @@ public class KeyboardGame : BaseGame
 
     public override void LoadRandomQuestion()
     {
+        base.LoadRandomQuestion();
+
         GetRandomQuestion();
 
         keyboard.SetActive(true);
@@ -19,12 +21,14 @@ public class KeyboardGame : BaseGame
 
     }
 
-    public override void AnswerOption(string answer)
+    public override bool AnswerOption(string answer)
     {
-        base.AnswerOption(answer);
+        bool correctAnser = base.AnswerOption(answer);
 
         // Remove the keyboard here
         keyboard.SetActive(false);
+
+        return correctAnser;
     }
 
     private void CreateBestButton(int alternatives = 1)
@@ -60,8 +64,7 @@ public class KeyboardGame : BaseGame
 
         // Place all button texts in the buttons
         for (int i = 0; i < buttonNames.Count; i++)
-            buttons[i].UpdateText(buttonNames[i]);
-        
+            buttons[i].UpdateText(buttonNames[i]);        
 
     }
 

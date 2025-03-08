@@ -9,7 +9,13 @@ public class Settings : MonoBehaviour
     public int SelectedCategoriesBinary { get; set; }
 	public static Settings Instance { get; private set; }
 
-	private void Awake()
+
+    [Header("Answer Colors")]
+    [SerializeField] public Color CorrectColor;
+    [SerializeField] public Color WrongColor;
+
+
+    private void Awake()
 	{
 		if (Instance != null) {
 			Destroy(gameObject);

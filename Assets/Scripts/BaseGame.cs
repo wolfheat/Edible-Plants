@@ -16,6 +16,7 @@ public abstract class BaseGame : MonoBehaviour
     [SerializeField] protected TextMeshProUGUI infoTextHeaderLatin;
     [SerializeField] protected TextMeshProUGUI infoText;
     [SerializeField] protected GameObject infoObject;
+    public bool HaveInputtedAnswer { get; set; }
 
 
     protected QuestionData activeQuestionData = null;
@@ -77,14 +78,20 @@ public abstract class BaseGame : MonoBehaviour
         LoadRandomQuestion();
     }
 
-    public abstract void LoadRandomQuestion();
+    public virtual void LoadRandomQuestion() => HaveInputtedAnswer = false;
 
-    public virtual void AnswerOption(string answer)
+    public virtual bool AnswerOption(string answer)
     {
+        HaveInputtedAnswer = true;
+        bool correctAnswer = answer == activeQuestionData.ItemName;
+
         // Make Correct Green and Wrong Red
-        resultText.text = (answer == activeQuestionData.ItemName) ? $"<color=#44FF44>Correct!</color>" : $"<color=#FF4444>Wrong!</color>";
+        resultText.text = correctAnswer ? "Correct!" : "Wrong";
+        resultText.color = correctAnswer ? Settings.Instance.CorrectColor : Settings.Instance.WrongColor; 
+
         if (infoText != null)
             SetInfoText();
+        return correctAnswer;
     }
 
 

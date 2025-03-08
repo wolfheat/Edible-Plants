@@ -11293,7 +11293,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -1156}
-  m_SizeDelta: {x: 0, y: 100}
+  m_SizeDelta: {x: -134.05, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1102885997
 MonoBehaviour:
@@ -16425,6 +16425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91260bd4276c01b41a3d637afa3eb98c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CorrectColor: {r: 0.36416093, g: 1, b: 0.3160377, a: 1}
+  WrongColor: {r: 1, g: 0.41037738, b: 0.41037738, a: 1}
 --- !u!1 &1624392476
 GameObject:
   m_ObjectHideFlags: 0
