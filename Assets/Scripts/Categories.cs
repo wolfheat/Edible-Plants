@@ -15,6 +15,11 @@ public class Categories : MonoBehaviour
     [SerializeField] private List<CategoryButton> categoryButtons;
     [SerializeField] private TextMeshProUGUI selectedText;
 
+    private void Start()
+    {
+        UpdateVisuals();
+        
+    }
     private void OnEnable()
     {
         // Every time this is enabled update info from the Settings?

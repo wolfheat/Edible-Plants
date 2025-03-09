@@ -166,7 +166,7 @@ PlayerSettings:
   androidMinAspectRatio: 1
   applicationIdentifier:
     Android: com.WolfheatProductions.EdiblePlants
-    Standalone: com.DefaultCompany.2D-URP
+    Standalone: com.Wolfheat-Productions.Edible-Plants
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -900,7 +900,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
   cloudProjectId: 24393dd3-f6e6-4ffa-b4f3-33a72c11698a
   framebufferDepthMemorylessMode: 0

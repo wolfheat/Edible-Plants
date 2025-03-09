@@ -126,6 +126,10 @@ MonoBehaviour:
     m_Localized: Giftig
     m_Metadata:
       m_Items: []
+  - m_Id: 442151263793152
+    m_Localized: Spiselige planter
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

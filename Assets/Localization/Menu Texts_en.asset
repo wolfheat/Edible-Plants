@@ -82,11 +82,9 @@ MonoBehaviour:
       eating large amounts to reduce the risk in case you have made a mistake.
 
 
-
       Avoid
       picking plants that grow along railway tracks or roadsides, as pesticides are
       often used in these areas.
-
 
 
       You should also contact the landowner before
@@ -131,6 +129,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 297522480541696
     m_Localized: Toxic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442151263793152
+    m_Localized: Edible Plants
     m_Metadata:
       m_Items: []
   references:

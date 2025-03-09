@@ -101,7 +101,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 296020487696384
-    m_Localized: "V\xE4lj de katergorier du vill anv\xE4nda som urval av v\xE4xter."
+    m_Localized: "V\xE4lj de kategorier du vill anv\xE4nda som urval av v\xE4xter."
     m_Metadata:
       m_Items: []
   - m_Id: 297362916634624
@@ -126,6 +126,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 297522480541696
     m_Localized: Giftig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 442151263793152
+    m_Localized: "\xC4tliga V\xE4xter"
     m_Metadata:
       m_Items: []
   references:

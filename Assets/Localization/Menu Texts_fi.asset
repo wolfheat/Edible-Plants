@@ -127,6 +127,10 @@ MonoBehaviour:
     m_Localized: Myrkyllinen
     m_Metadata:
       m_Items: []
+  - m_Id: 442151263793152
+    m_Localized: "Sy\xF6t\xE4v\xE4t kasvit"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
