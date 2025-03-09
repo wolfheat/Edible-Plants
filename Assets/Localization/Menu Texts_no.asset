@@ -94,6 +94,38 @@ MonoBehaviour:
     m_Localized: DISCLAMER!
     m_Metadata:
       m_Items: []
+  - m_Id: 294277976682496
+    m_Localized: Neste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 296020487696384
+    m_Localized: Velg kategoriene du vil bruke som et utvalg planter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297362916634624
+    m_Localized: "Tr\xE6r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297394650738688
+    m_Localized: Blomster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297420714143744
+    m_Localized: "R\xF8tter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297446152597504
+    m_Localized: "B\xE6r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297486237560832
+    m_Localized: "R\xE5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297522480541696
+    m_Localized: Giftig
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

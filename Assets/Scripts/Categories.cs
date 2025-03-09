@@ -28,7 +28,8 @@ public class Categories : MonoBehaviour
         for (int i = 0; i < categoryButtons.Count; i++) {
             bool enabled = (categories & (1 << i)) != 0;
             categoryButtons[i].SetButtonActive(enabled);
-            sb.Append(enabled ? " "+(Category)(1<<i) : "");
+            sb.Append(enabled ? " "+(categoryButtons[i].ButtonText()) : "");
+            //sb.Append(enabled ? " "+(Category)(1<<i) : "");
         }
         selectedText.text = sb.ToString();
     }

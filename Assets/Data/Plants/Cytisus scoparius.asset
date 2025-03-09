@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Harris
   LatinName: Cytisus scoparius
-  info: "Den blir fr\xE5n 40 till 150 cm h\xF6g och blommar fr\xE5n maj till juni
-    med orangegula blommor som v\xE4xer med en till tv\xE5 blommor p\xE5 cirka tv\xE5
-    cm l\xE5nga skaft fr\xE5n bladvecken. Harris v\xE4xer i form av en kvastlik buske
-    med femkantiga gr\xF6na grenar utan tornar. Unga knoppar kan anv\xE4ndas i sallad.Stora
-    m\xE4ngder har orsakat f\xF6rgiftningar hos djur d\xE5 den inneh\xE5ller spartein
-    och isospartein. Har anv\xE4nts som abortframkallande medel."
+  info: "Uttalas Har-Ris. V\xE4xten blir mellan 40 och 150 cm h\xF6g och blommar
+    fr\xE5n maj till juni med orangegula blommor som v\xE4xer med en till tv\xE5
+    blommor p\xE5 cirka tv\xE5 cm l\xE5nga skaft fr\xE5n bladvecken. Harris v\xE4xer
+    i form av en kvastlik buske med femkantiga gr\xF6na grenar utan tornar. Unga
+    knoppar kan anv\xE4ndas i sallad.Stora m\xE4ngder har orsakat f\xF6rgiftningar
+    hos djur d\xE5 den inneh\xE5ller spartein och isospartein. Har anv\xE4nts som
+    abortframkallande medel."
   sprites:
   - {fileID: 21300000, guid: eb1a4e7563663144290192db73fbf8e9, type: 3}
   - {fileID: 21300000, guid: 271614afefa086045b29fe2f48dfcf69, type: 3}

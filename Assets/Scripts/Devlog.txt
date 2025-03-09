@@ -39,6 +39,9 @@ Mar 2025
 		* Fixed navigation button size
 		* Fixed Color automation in settings values
 		* Fixed answer buttons position and colliders
+		* Implemented Localization for Swedish, English, Norwegian, Finnish
+9/3		* Added 20 plants [total 100, pictures: ]
+		[Android Build: Mb] Image compression 256 for pictures
 
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare

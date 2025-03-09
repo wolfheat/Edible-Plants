@@ -1,0 +1,12 @@
+# ninja log v5
+70	287	7632373284482112	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4fcc9726370126cf
+289	496	7632373286440625	F:/Unity Projects/GitHub/Edible Plants/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1x3t2z2p/obj/armeabi-v7a/libswappywrapper.so	4012ec73e9fb8df
+9	1063	7632373292261481	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	fc5bcaa77c0c1df5
+31	1068	7632373292301576	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a1822ded9d92a20
+23	1087	7632373292467225	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d653246c422073f9
+49	1104	7632373292637379	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	e0064f8fb60c6296
+1	1197	7632373293574408	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	76cc796b906a2b19
+59	1217	7632373293774584	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f86203788a249e49
+40	1334	7632373294926722	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	61bf1bf222fbdbed
+16	1472	7632373296242187	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	26d0f24d41419bb5
+1472	1577	7632373297330459	F:/Unity Projects/GitHub/Edible Plants/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1x3t2z2p/obj/armeabi-v7a/libgame.so	adb87a5bc486980e

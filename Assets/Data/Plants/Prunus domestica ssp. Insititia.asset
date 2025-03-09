@@ -27,7 +27,7 @@ MonoBehaviour:
   leaf: 0
   flower: 0
   seed: 0
-  fruit: 0
+  fruit: 1
   avoid: 0
   treeBush: 1
-  CategoriesBinary: 1
+  CategoriesBinary: 25

@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundColor: {fileID: 523229873085458861}
+  textField: {fileID: 6041130928805630731}
 --- !u!114 &3021562108131518230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,3 +496,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 445733807092130307, guid: bbc527aa186cc9c4dbf94c3431974086, type: 3}
   m_PrefabInstance: {fileID: 4281256523819042440}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6041130928805630731 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7547044182122763651, guid: bbc527aa186cc9c4dbf94c3431974086, type: 3}
+  m_PrefabInstance: {fileID: 4281256523819042440}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -95,6 +95,38 @@ MonoBehaviour:
     m_Localized: DISCLAMER!
     m_Metadata:
       m_Items: []
+  - m_Id: 294277976682496
+    m_Localized: Seuraavaksi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 296020487696384
+    m_Localized: "Valitse luokat, joita haluat k\xE4ytt\xE4\xE4 kasvivalikoimana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297362916634624
+    m_Localized: Puut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297394650738688
+    m_Localized: Kukat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297420714143744
+    m_Localized: Juuret
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297446152597504
+    m_Localized: Marjat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297486237560832
+    m_Localized: Raaka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297522480541696
+    m_Localized: Myrkyllinen
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
