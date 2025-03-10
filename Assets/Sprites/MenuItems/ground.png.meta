@@ -1,29 +1,7 @@
 fileFormatVersion: 2
-guid: 5423b7576f3a5574ea973841fa6ea018
-AssetOrigin:
-  serializedVersion: 1
-  productId: 216237
-  packageName: 2D Forest sprite pack.
-  packageVersion: 1.0
-  assetPath: Assets/Forest sprite pack/Sprites/clouds.png
-  uploadId: 487926
+guid: a3fa8ca39654d2a479a6ba0c1efa8fed
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1115256706364395465
-    second: clouds_2
-  - first:
-      213: 5291327898690728900
-    second: clouds_4
-  - first:
-      213: -8294918184612582425
-    second: clouds_5
-  - first:
-      213: -3052748074778076258
-    second: clouds_10
-  - first:
-      213: 4522440564201344832
-    second: clouds_11
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -65,14 +43,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
-  spriteExtrude: 1
+  spriteMode: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -87,11 +65,11 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -117,9 +95,9 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 45
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -158,111 +136,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clouds_2
+      name: Achillea millefolium_0
       rect:
         serializedVersion: 2
-        x: 248
-        y: 408
-        width: 422
-        height: 70
+        x: 0
+        y: 0
+        width: 704
+        height: 704
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 73037c73fefc580f0800000000000000
-      internalID: -1115256706364395465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds_4
-      rect:
-        serializedVersion: 2
-        x: 892
-        y: 271
-        width: 606
-        height: 193
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c3339f60b29e6940800000000000000
-      internalID: 5291327898690728900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds_5
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 228
-        width: 706
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7eb2d350cd782ec80800000000000000
-      internalID: -8294918184612582425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds_10
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 29
-        width: 917
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9b5816dcc572a5d0800000000000000
-      internalID: -3052748074778076258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds_11
-      rect:
-        serializedVersion: 2
-        x: 1014
-        y: 45
-        width: 347
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04fc9037bbfe2ce30800000000000000
-      internalID: 4522440564201344832
+      spriteID: f8673917602250f50800000000000000
+      internalID: 6846916219557344911
       vertices: []
       indices: 
       edges: []
@@ -281,11 +171,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      clouds_10: -3052748074778076258
-      clouds_11: 4522440564201344832
-      clouds_2: -1115256706364395465
-      clouds_4: 5291327898690728900
-      clouds_5: -8294918184612582425
+      Achillea millefolium_0: 6846916219557344911
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

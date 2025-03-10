@@ -42,6 +42,8 @@ Mar 2025
 		* Implemented Localization for Swedish, English, Norwegian, Finnish
 9/3		* Added 20 plants [total 100, pictures: ]
 		[Android Build: Mb] Image compression 256 for pictures
+10/3	* Fixed UI game name and lowered sprite assets sizes
+		* Added butterflies
 
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
