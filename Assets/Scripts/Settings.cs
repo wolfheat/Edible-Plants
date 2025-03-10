@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public enum Languages {English,Svenska,Norsk,Suomi};
+public enum Languages {Svenska, English, Suomi, Norsk };
 public class Settings : MonoBehaviour
 {
     public List<Category> SelectedCategories { get; set; }

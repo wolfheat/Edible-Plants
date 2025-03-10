@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 5ee13def5181b0d489c150da54149f6a
   m_currentHash:
     serializedVersion: 2
-    Hash: a8e214f9a2ca4d72e4bb9bd8504a5af5
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
-  m_BuildAddressablesWithPlayerBuild: 0
+  m_BuildAddressablesWithPlayerBuild: 2
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
   - {fileID: 11400000, guid: 274439e3d3a126b4eb4e2ace0cea4759, type: 2}
@@ -82,6 +82,20 @@ MonoBehaviour:
     - m_InheritedParent: 
       m_Id: 6b8d130a94b05e74dac1e39a7b0381e0
       m_ProfileName: Default
+      m_Values:
+      - m_Id: 78fd470152d46674a83160129c5ce1d1
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 86d9f3314e5bc55409af4dd3856aa436
+        m_Value: <undefined>
+      - m_Id: 90ebdb59789024443bcbb2531a13f44c
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 9477298120ab0ee4fab4d61f1111500a
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: cf7c50d8829213c418bbf4a305f33ca9
+        m_Value: 'ServerData/[BuildTarget]'
+    - m_InheritedParent: 
+      m_Id: a47f1c40523168048ae9cbe29a098c94
+      m_ProfileName: New Profile
       m_Values:
       - m_Id: 78fd470152d46674a83160129c5ce1d1
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
@@ -131,4 +145,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ed45f40ee8d6c6945865dc3f20861b3b, type: 2}
   - {fileID: 11400000, guid: d8d0e0719dbb4224089509806777c599, type: 2}
   - {fileID: 11400000, guid: bf9a1658993747b4b918db88ed956f5a, type: 2}
-  m_ActiveProfileId: 6b8d130a94b05e74dac1e39a7b0381e0
+  m_ActiveProfileId: a47f1c40523168048ae9cbe29a098c94

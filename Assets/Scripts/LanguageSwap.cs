@@ -23,6 +23,7 @@ public class LanguageSwap : MonoBehaviour
         swaptimer = StartCoroutine(RunSwapTimer());
 
         Settings.Instance.SwapLanguage();
+        PopupText.Instance.ShowPopup("Changing Language to "+(Languages)Settings.Instance.LanguageIndex);
         ChangeLocalization();
     }
 
