@@ -23,6 +23,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 7ee1bbaeedfecac49a1781a00f657cff, type: 3}
   - {fileID: 21300000, guid: ac5562dcf03721547921ea50ccece407, type: 3}
+  army: 0
   commonness: 1
   feral: 0
   protectedPlant: 0
@@ -34,4 +35,5 @@ MonoBehaviour:
   fruit: 1
   avoid: 0
   treeBush: 0
+  medicinal: 
   CategoriesBinary: 24

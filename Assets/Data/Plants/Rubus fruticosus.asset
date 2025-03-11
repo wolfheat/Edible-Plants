@@ -23,6 +23,7 @@ MonoBehaviour:
     l\xE4ngs kusterna upp till m\xE4lardalen."
   sprites:
   - {fileID: 21300000, guid: ab63376c3f8c6364f9b0b94790de25fc, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -34,4 +35,5 @@ MonoBehaviour:
   fruit: 1
   avoid: 0
   treeBush: 2
+  medicinal: 
   CategoriesBinary: 25

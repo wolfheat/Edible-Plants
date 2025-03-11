@@ -22,6 +22,7 @@ MonoBehaviour:
     till te eller sallad. Brukar anv\xE4ndas till kryddning av br\xE4nnvin."
   sprites:
   - {fileID: 21300000, guid: 9c37261a47bdaa04380fcc7db5a81d6d, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -33,4 +34,5 @@ MonoBehaviour:
   fruit: 0
   avoid: 0
   treeBush: 0
+  medicinal: 
   CategoriesBinary: 18

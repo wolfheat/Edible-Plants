@@ -83,9 +83,10 @@ MonoBehaviour:
       dem. Inta dessutom inga stora m\xE4ngder\tf\xF6r att minimera skadorna ifall
       du av misstag har gjort en f\xF6rv\xE4xling. \n\r\nUndvik att plocka v\xE4xter
       som v\xE4xer p\xE5 banvallar eller l\xE4ngs dikeskanter vid v\xE4gar d\xE5
-      det ofta anv\xE4nts besprutningsmedel p\xE5 dessa platser.\r\n\nDu b\xF6r \xE4ven
-      kontakta mark\xE4garen innan du plockar v\xE4xterna. Plocka aldrig fridlysta
-      blommor eller v\xE4xter.\r\n\t\t"
+      det ofta anv\xE4nts besprutningsmedel p\xE5 dessa platser. Undvik ocks\xE5
+      platser kring fabriker, soptippar, verkst\xE4der och slakterier. \r\n\nDu b\xF6r
+      \xE4ven kontakta mark\xE4garen innan du plockar v\xE4xterna. Plocka aldrig
+      fridlysta blommor eller v\xE4xter.\r\n\t\t"
     m_Metadata:
       m_Items: []
   - m_Id: 25470192316416
@@ -130,6 +131,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 442151263793152
     m_Localized: "\xC4tliga V\xE4xter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1157224164749312
+    m_Localized: Information
     m_Metadata:
       m_Items: []
   references:

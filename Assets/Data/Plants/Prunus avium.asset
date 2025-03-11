@@ -21,6 +21,7 @@ MonoBehaviour:
     variteter s\xE5som Bigarr\xE5er, vanlig s\xF6tk\xF6rsb\xE4r"
   sprites:
   - {fileID: 21300000, guid: bf74c2b030562a84987933423b2a4242, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -32,4 +33,5 @@ MonoBehaviour:
   fruit: 1
   avoid: 0
   treeBush: 1
+  medicinal: 
   CategoriesBinary: 25

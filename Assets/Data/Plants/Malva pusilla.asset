@@ -20,6 +20,7 @@ MonoBehaviour:
     g\xE5tt tillbaka under 1900-talet, den klassades 2015 i Sverige som S\xE5rbar."
   sprites:
   - {fileID: 21300000, guid: 8549f90c8f5cefb4983bf33278eb2dad, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -31,4 +32,5 @@ MonoBehaviour:
   fruit: 0
   avoid: 0
   treeBush: 0
+  medicinal: 
   CategoriesBinary: 22

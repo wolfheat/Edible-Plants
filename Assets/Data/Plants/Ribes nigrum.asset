@@ -22,6 +22,7 @@ MonoBehaviour:
     eller gurkinl\xE4ggningar."
   sprites:
   - {fileID: 21300000, guid: 5d1e05fa03561a949805a43e81377bac, type: 3}
+  army: 0
   commonness: 2
   feral: 1
   protectedPlant: 0
@@ -33,4 +34,5 @@ MonoBehaviour:
   fruit: 1
   avoid: 0
   treeBush: 2
+  medicinal: 
   CategoriesBinary: 25

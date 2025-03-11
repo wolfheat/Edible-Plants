@@ -119,6 +119,10 @@ MonoBehaviour:
     m_Key: Edible Plants
     m_Metadata:
       m_Items: []
+  - m_Id: 1157224164749312
+    m_Key: Information
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

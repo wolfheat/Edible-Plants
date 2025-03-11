@@ -56,6 +56,8 @@ public class PlantDataImporter : EditorWindow
             bool protectedPlant = values[12]!="";
 
             int treeBush = values[13].Length > 0 ? Int32.Parse(values[13]):0;
+            string medicinal = values[14];
+            int army = values[15].Length > 0 ? Int32.Parse(values[15]):0;
 
             // Find all matching images
             Sprite[] sprites = FindSpritesForPlant(latinName);
@@ -71,7 +73,7 @@ public class PlantDataImporter : EditorWindow
             }
 
             // Create or update ScriptableObject
-            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral, protectedPlant, treeBush);
+            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral, protectedPlant, treeBush, medicinal, army);
             updatedItems++;
         }
 
@@ -169,7 +171,7 @@ public class PlantDataImporter : EditorWindow
         }
     }
     
-    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral, bool protectedPlant, int treeBush)
+    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral, bool protectedPlant, int treeBush, string medicinal, int army)
     {
         //Debug.Log("Create Or Update Plant Data: " + latinName);
         
@@ -194,6 +196,8 @@ public class PlantDataImporter : EditorWindow
         plantData.fruit = edible[5];
         plantData.avoid = edible[6];
         plantData.treeBush = treeBush;
+        plantData.medicinal = medicinal;
+        plantData.army = army;
 
         plantData.commonness = commonness;
         plantData.feral = feral;

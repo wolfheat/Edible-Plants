@@ -16,11 +16,13 @@ public abstract class BaseGame : MonoBehaviour
     [SerializeField] protected TextMeshProUGUI infoTextHeaderLatin;
     [SerializeField] protected TextMeshProUGUI infoText;
     [SerializeField] protected GameObject infoObject;
+    [SerializeField] protected GameObject armyObject;
+    [SerializeField] protected TextMeshProUGUI armyText;
+
     public bool HaveInputtedAnswer { get; set; }
 
 
     protected QuestionData activeQuestionData = null;
-
 
     private string[] parts = { "Rot", "Stjälk", "Blad", "Blommor", "Frö", "Frukt", "Undvik" };
     //private string[] parts = { "Root", "Stem", "Leaf", "Flower", "Seed", "Fruit", "Avoid" };
@@ -63,6 +65,23 @@ public abstract class BaseGame : MonoBehaviour
             infoText.text += $"<color=#985915>{feral}</color>";
         if (activeQuestionData.protectedPlant)
             infoText.text += $"<color=#FF2222>{protectText}</color>";
+
+        // Army Info
+        if(activeQuestionData.army != 0) {
+            armyObject.SetActive(true);
+            switch (activeQuestionData.army) {
+                case 1:
+                    armyText.text = "TOP 15";
+                    break;
+                    case 2:
+                    armyText.text = "TOP 50";
+                    break;
+                    default:
+                    armyText.text = "-----";
+                    break;
+            }
+        }else armyObject.SetActive(false);
+
 
     }
     protected virtual void UpdateCurrentQuestionVisuals()

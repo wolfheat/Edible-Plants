@@ -31,6 +31,15 @@ public class ItemDictionary : MonoBehaviour
         GenerateSelectedListOfAllAnswers();
     }
 
+
+    [ContextMenu("Reload Plants")]
+    private void LoadAllPlantsAssetDatas()
+    {
+        Debug.Log("Reloading Plants");
+        List<QuestionData> questions = PlantDataReader.ReturnAllData();
+        UpdatePlantsAssetDatas(questions);
+    }
+
     public void UpdatePlantsAssetDatas(List<QuestionData> list)
     {
         Debug.Log("Reloading Plants");

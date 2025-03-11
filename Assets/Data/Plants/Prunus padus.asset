@@ -21,6 +21,7 @@ MonoBehaviour:
     till sylt."
   sprites:
   - {fileID: 21300000, guid: eb9c8d9b299649a4984039427fd636b4, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -32,4 +33,5 @@ MonoBehaviour:
   fruit: 1
   avoid: 0
   treeBush: 1
+  medicinal: 
   CategoriesBinary: 25

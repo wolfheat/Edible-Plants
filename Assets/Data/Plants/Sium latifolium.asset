@@ -21,6 +21,7 @@ MonoBehaviour:
     och Svealand och dessutom vid Finlands s.-\xF6. gr\xE4ns. "
   sprites:
   - {fileID: 21300000, guid: a00ce37d773819040b663b2611a5787d, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -32,4 +33,5 @@ MonoBehaviour:
   fruit: 0
   avoid: 1
   treeBush: 1
+  medicinal: 
   CategoriesBinary: 33

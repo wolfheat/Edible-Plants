@@ -22,6 +22,7 @@ MonoBehaviour:
     variant av den violetta f\xE4rgen."
   sprites:
   - {fileID: 21300000, guid: c4c6564613345b54ea3cf747526a5b00, type: 3}
+  army: 0
   commonness: 1
   feral: 0
   protectedPlant: 0
@@ -33,4 +34,5 @@ MonoBehaviour:
   fruit: 0
   avoid: 0
   treeBush: 0
+  medicinal: 
   CategoriesBinary: 0

@@ -44,6 +44,9 @@ Mar 2025
 		[Android Build: Mb] Image compression 256 for pictures
 10/3	* Fixed UI game name and lowered sprite assets sizes
 		* Added butterflies
+11/3	* Fixed build issue install on phone not enough storage space
+		* Added Information page
+		* Added info of millitary top plants
 
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
@@ -53,9 +56,26 @@ Mar 2025
 DISCLAMER TEXT
 Denna App bör användas med försiktighet. Även då ansträngning har gjorts för att säkerställa att den information som förmedlas är korrekt kan det ha smugit sig in fel antingen vid skapandet av den eller från de källor som använts. Dubbelkolla därför själv all information och läs på om växterna innan du förtär dem. Inta dessutom inga stora mängder	för att minimera skadorna ifall du av misstag har gjort en förväxling. 
 
-Undvik att plocka växter som växer på banvallar eller längs dikeskanter vid vägar då det ofta använts besprutningsmedel på dessa platser.
+Undvik att plocka växter som växer på banvallar eller längs dikeskanter vid vägar då det ofta använts besprutningsmedel på dessa platser. Undvik också platser kring fabriker, soptippar, verkstäder och slakterier. 
+
 
 Du bör även kontakta markägaren innan du plockar växterna. Plocka aldrig fridlysta blommor eller växter.
+
+
+INFORMATIONS SIDOR
+
+INNEHÅLL I VÄXTDELAR
+I Sverige finns det ca 250 vilda växter som kan användas som föda. De före kommer över hela landet, men växtlig heten varierar betydligt, dels på grund av de stora skillnaderna i klimatet, dels beroende på jordmån, skogstyp mm.
+I södra och mellersta Sverige går det att finna ätliga växter året om, eftersom snötillgången och istäckningen brukar vara sparsam. Även i norra Sverige finns det tillräckligt med växter på våren, sommaren och hösten, men på vintern är få arter tillgängliga.
+
+Näringsinnehållet i växterna varierar un¬ der året hos olika växtgrupper. Lavar och ormbunkar har i stort sett samma näringsinnehåll under hela året. 
+Ettåriga växter växer upp och blommar samma år. Blad och skott har det högsta näringsvärdet (proteiner, vitaminer och i viss mån kolhydrater). Även fröna har bra näringsvärde.
+
+Fleråriga växter lagrar stärkelse eller andra kolhydrater i sina rötter under sensommaren-hösten. Denna näring ut¬ nyttjas året därpå för tillväxt och blom¬ ning. Största näringsinnehållet har dessa växter alltså på hösten/vintern och innan de börjar sin blomning.
+Bär har lågt näringsvärde och innehåller diarréframkallande organiska syror. Du bör därför inte äta för mycket av dem (högst 2 liter per dygn). 
+Svamp har mycket litet energiinnehåll och skall inte användas som huvudsaklig föda. Som smaksättning och utfyllnad i anrättningar är dock svamp utmärkt.
+
+
 
 
 

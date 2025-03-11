@@ -17,10 +17,11 @@ MonoBehaviour:
   info: "Nyponros (Rosa dumalis) \xE4r en rosbuske, som kan v\xE4xa sig tre meter
     h\xF6g. Den f\xF6rv\xE4xlas l\xE4tt med stenros. Taggarna \xE4r t\xE4mligen grova
     och bak\xE5tb\xF6jda. Nyponen \xE4r kala och ganska mjuka. Nyponrosen \xE4r den
-    vanliga vildv\xE4xande rosarten i Sverige och \xE4r allm\xE4n fr\xE5n Sk\xE5ne
+    vanligaste vildv\xE4xande rosarten i Sverige och \xE4r allm\xE4n fr\xE5n Sk\xE5ne
     till \xC5ngermanland. "
   sprites:
   - {fileID: 21300000, guid: 808d8415d5cef6a4489310454f388210, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -32,4 +33,5 @@ MonoBehaviour:
   fruit: 2
   avoid: 0
   treeBush: 2
+  medicinal: 
   CategoriesBinary: 11

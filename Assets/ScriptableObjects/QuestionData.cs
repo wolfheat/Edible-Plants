@@ -7,9 +7,10 @@ public class QuestionData : ScriptableObject
     [Header("Main Info")]
     public string ItemName;
     public string LatinName;
-    [TextArea(15,20)]
+    [TextArea(11,10)]
     public string info;
     public Sprite[] sprites;
+    public int army;
 
     [Header("Availability")]
     public int commonness;
@@ -25,6 +26,10 @@ public class QuestionData : ScriptableObject
     public int fruit;
     public int avoid;
     public int treeBush;
+
+
+    [Header("Medicinal Usage")]
+    public string medicinal;
 
     [Header("Categories")]
     public int CategoriesBinary;

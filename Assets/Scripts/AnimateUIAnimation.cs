@@ -42,7 +42,6 @@ public class AnimateUIAnimation : MonoBehaviour
 
     private void StepAnimation()
     {
-        Debug.Log("Updating Step with speed: "+animationsSpeed);
         if (sprites.Length == 0) return;
         activeSprite++;
         if(activeSprite >= sprites.Length) {

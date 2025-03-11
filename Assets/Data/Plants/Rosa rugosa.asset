@@ -21,6 +21,7 @@ MonoBehaviour:
     nyponsom inneh\xE5ller mycket C-vitamin."
   sprites:
   - {fileID: 21300000, guid: c769768804e36c94bac778d70363be5b, type: 3}
+  army: 0
   commonness: 2
   feral: 1
   protectedPlant: 0
@@ -32,4 +33,5 @@ MonoBehaviour:
   fruit: 2
   avoid: 0
   treeBush: 2
+  medicinal: 
   CategoriesBinary: 11

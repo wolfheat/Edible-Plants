@@ -135,6 +135,10 @@ MonoBehaviour:
     m_Localized: Edible Plants
     m_Metadata:
       m_Items: []
+  - m_Id: 1157224164749312
+    m_Localized: Information
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -20,6 +20,7 @@ MonoBehaviour:
     (T. latifolia) och smalkaveldun (T. angustifolia)"
   sprites:
   - {fileID: 21300000, guid: 9c91a79d17eb4834594a63df28369321, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -31,4 +32,5 @@ MonoBehaviour:
   fruit: 0
   avoid: 0
   treeBush: 0
+  medicinal: 
   CategoriesBinary: 4

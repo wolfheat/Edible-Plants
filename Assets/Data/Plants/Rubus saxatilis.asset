@@ -23,6 +23,7 @@ MonoBehaviour:
     Hybriden kallas b\xE4verb\xE4r."
   sprites:
   - {fileID: 21300000, guid: fd3566a02989d1e4798a50721d849e92, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -34,4 +35,5 @@ MonoBehaviour:
   fruit: 1
   avoid: 0
   treeBush: 0
+  medicinal: 
   CategoriesBinary: 24

@@ -18,6 +18,7 @@ MonoBehaviour:
     hundra \xE5r sedan efter korsningar mellan olika smultronarter i Amerika."
   sprites:
   - {fileID: 21300000, guid: fa516096e74fa664c97cd4efa57b42f2, type: 3}
+  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -29,4 +30,5 @@ MonoBehaviour:
   fruit: 1
   avoid: 0
   treeBush: 0
+  medicinal: 
   CategoriesBinary: 24
