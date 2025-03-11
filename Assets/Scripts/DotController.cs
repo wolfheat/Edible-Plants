@@ -14,6 +14,11 @@ public class DotController : MonoBehaviour
         int dotAmt = InformationDictionary.Instance.InformationToatal;
         dots = new Dot[dotAmt];
 
+        foreach (Transform child in transform) {
+            if (child == transform) continue;
+            Destroy(child.gameObject);
+        }
+
         for (int i = 0; i < dotAmt; i++) {
             dots[i] = Instantiate(dotPrefab,this.transform);
         }

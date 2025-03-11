@@ -48,6 +48,8 @@ Mar 2025
 		* Added Information page
 		* Added info of millitary top plants
 		* Correct text now resets for every question
+		* Fixed Navigation Infopages
+		* Fixed Infopages not scaling correctly
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
 
