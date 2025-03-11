@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DotController : MonoBehaviour
@@ -7,7 +8,7 @@ public class DotController : MonoBehaviour
     
     private Dot[] dots = new Dot[0]; 
 
-    void Start()
+    void OnEnable()
     {
         // Create All necessary dots
         int dotAmt = InformationDictionary.Instance.InformationToatal;
@@ -19,8 +20,10 @@ public class DotController : MonoBehaviour
         dots[0].SetAsHighlighted(true);
     }
 
-    public void UpdateActiveDot()
+    public IEnumerator UpdateActiveDot()
     {
+        yield return null;
+        yield return null;
         int activeIndex = InformationDictionary.Instance.ActiveIndex;
         for (int i = 0; i < dots.Length; i++) {
             dots[i].SetAsHighlighted(i == activeIndex);

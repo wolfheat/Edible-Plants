@@ -21,6 +21,7 @@ public class TwoOptionGame : BaseGame
         CreateButtons(alternatives);
 
         resultText.text = "Make your Choice!";
+        resultText.color = Settings.Instance.NeutralGreyColor;
 
         // Set Correct answer at random position and store the correct answer
         int correctIndex = Random.Range(0, alternatives);

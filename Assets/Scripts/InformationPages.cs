@@ -11,6 +11,7 @@ public class InformationPages : MonoBehaviour
     private void OnEnable() => LoadInfo(InformationDictionary.GetCurrent());
 
     public void LoadNextInfo() => LoadInfo(InformationDictionary.GetNext());
+    public void LoadPrevInfo() => LoadInfo(InformationDictionary.GetPrevious());
 
     private void LoadInfo(InformationData informationData)
     {
@@ -21,6 +22,6 @@ public class InformationPages : MonoBehaviour
         headerText.text = informationData.InformationHeader;
         infoText.text = informationData.info;
 
-        dotController.UpdateActiveDot();
+        StartCoroutine(dotController.UpdateActiveDot());
     }
 }

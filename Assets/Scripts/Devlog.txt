@@ -47,7 +47,7 @@ Mar 2025
 11/3	* Fixed build issue install on phone not enough storage space
 		* Added Information page
 		* Added info of millitary top plants
-
+		* Correct text now resets for every question
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
 

@@ -20,9 +20,15 @@ public class InformationDictionary : MonoBehaviour
         Instance = this;        
     }
     public static InformationData GetCurrent() => Instance.informationDatas[Instance.ActiveIndex];
+    public static string GetCurrentName() => Instance.informationDatas[Instance.ActiveIndex].name;
     public static InformationData GetNext()
     {
         Instance.ActiveIndex = (Instance.ActiveIndex + 1)% Instance.informationDatas.Count;
+        return Instance.informationDatas[Instance.ActiveIndex];
+    }
+    public static InformationData GetPrevious()
+    {
+        Instance.ActiveIndex = (Instance.ActiveIndex + Instance.informationDatas.Count -1) % Instance.informationDatas.Count;
         return Instance.informationDatas[Instance.ActiveIndex];
     }
 }

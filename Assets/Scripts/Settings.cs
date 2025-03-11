@@ -14,6 +14,7 @@ public class Settings : MonoBehaviour
     public string Language => Enum.GetName(typeof(Languages), LanguageIndex);
 
     [Header("Answer Colors")]
+    [SerializeField] public Color NeutralGreyColor;
     [SerializeField] public Color CorrectColor;
     [SerializeField] public Color WrongColor;
 
