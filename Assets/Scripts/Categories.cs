@@ -6,7 +6,7 @@ using UnityEngine;
 
 
 [Flags]
-public enum Category {Trees=1,Flowers=2,Roots=4,Berries=8, Raw=16, Toxic=32}
+public enum Category {Trees=1,Flowers=2,Roots=4,Seeds = 8, Berries=16, Raw=32, Toxic=64, Cook=128}
 
 public class Categories : MonoBehaviour
 {

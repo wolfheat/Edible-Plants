@@ -27,7 +27,7 @@ MonoBehaviour:
   commonness: 2
   feral: 0
   protectedPlant: 0
-  root: 0
+  root: 3
   stem: 1
   leaf: 1
   flower: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   avoid: 0
   treeBush: 0
   medicinal: 
-  CategoriesBinary: 16
+  CategoriesBinary: 164

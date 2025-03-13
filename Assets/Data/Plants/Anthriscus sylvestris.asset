@@ -20,11 +20,13 @@ MonoBehaviour:
     ur familjen flockblommiga v\xE4xter. Stundtals g\xE5r den till och med att \xE5terfinna
     ovanf\xF6r tr\xE4dgr\xE4nsen, dock enbart tillf\xE4lligt. Hundk\xE4x kan framf\xF6rallt
     sammanblandas med spansk k\xF6rvel (Myrrhis odorata), od\xF6rt (Conium maculatum)
-    samt vildpersilja (Aethusa cynapium)."
+    samt vildpersilja (Aethusa cynapium). Roten \xE4r n\xE4ringsrik \xE4nda tills
+    v\xE4xten blommar, vilket den g\xF6r p\xE5 sommaren det andra \xE5ret. Roten
+    b\xF6r f\xF6rv\xE4llas upp till tre g\xE5nger."
   sprites:
   - {fileID: 21300000, guid: b45c1e11b6d2dd24bbb6812e178f1ccf, type: 3}
   - {fileID: 21300000, guid: 3bde1b1b681a1f84aa8f28b16345adaa, type: 3}
-  army: 0
+  army: 1
   commonness: 1
   feral: 0
   protectedPlant: 0
@@ -37,4 +39,4 @@ MonoBehaviour:
   avoid: 2
   treeBush: 0
   medicinal: 
-  CategoriesBinary: 36
+  CategoriesBinary: 196

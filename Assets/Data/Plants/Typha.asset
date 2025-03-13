@@ -17,10 +17,13 @@ MonoBehaviour:
   info: "Kaveldunsl\xE4ktet (Typha) \xE4r ett sl\xE4kte i familjen kaveldunsv\xE4xter.
     Sl\xE4ktet har 8\u201315 arter som f\xF6rekommer i n\xE4stan hela v\xE4rlden.
     Sl\xE4ktet beskrevs f\xF6rst av Carl von Linn\xE9. I Sverige finns arterna bredkaveldun
-    (T. latifolia) och smalkaveldun (T. angustifolia)"
+    (T. latifolia) och smalkaveldun (T. angustifolia). R\xF6tter kan anv\xE4ndas
+    \xE5ret om och man tar d\xE5 tillvara p\xE5 m\xE4rgen som kan \xE4tas r\xE5 eller
+    kokas. Vid kokning l\xF6ser m\xE4rgen upp sig i vattnet. Stj\xE4lkbasen kan \xE4tas
+    p\xE5 icke blomb\xE4rande stammar."
   sprites:
   - {fileID: 21300000, guid: 9c91a79d17eb4834594a63df28369321, type: 3}
-  army: 0
+  army: 1
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -33,4 +36,4 @@ MonoBehaviour:
   avoid: 0
   treeBush: 0
   medicinal: 
-  CategoriesBinary: 4
+  CategoriesBinary: 132

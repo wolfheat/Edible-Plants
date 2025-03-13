@@ -45,12 +45,16 @@ public class QuestionData : ScriptableObject
             CategoriesBinary += 1 << 1;
         if (root != 0)
             CategoriesBinary += 1 << 2;
-        if (fruit != 0)
+        if (seed != 0)
             CategoriesBinary += 1 << 3;
-        if (root == 1 || stem == 1 || leaf == 1 || flower == 1 || fruit == 1) // raw
+        if (fruit != 0)
             CategoriesBinary += 1 << 4;
-        if (avoid != 0) // Avoid
+        if (root == 1 || stem == 1 || leaf == 1 || flower == 1 || fruit == 1) // raw
             CategoriesBinary += 1 << 5;
+        if (avoid != 0) // Avoid
+            CategoriesBinary += 1 << 6;
+        if (root > 1 || stem > 1 || leaf > 1 || flower > 1 || fruit > 1) // raw
+            CategoriesBinary += 1 << 7;
 
     }
 }

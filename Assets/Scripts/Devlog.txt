@@ -50,6 +50,11 @@ Mar 2025
 		* Correct text now resets for every question
 		* Fixed Navigation Infopages
 		* Fixed Infopages not scaling correctly
+12/3	* Added Plants and Info pages
+		* Fixed UI scaling issues
+		* Added Cooked category
+
+		
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
 

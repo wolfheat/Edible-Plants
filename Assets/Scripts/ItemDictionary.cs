@@ -68,6 +68,16 @@ public class ItemDictionary : MonoBehaviour
         selectedQuestions.Clear();
         selectedQuestions = questions.Where(x => (x.CategoriesBinary&Settings.Instance.SelectedCategoriesBinary)!=0).ToList();
 
+        var stringAll = selectedQuestions.Select(x => x.ItemName).ToList();
+        var unselectedQuestions = questions.Where(x => !stringAll.Contains(x.ItemName)).ToList();
+
+        Debug.Log("Unselected items = "+unselectedQuestions.Count);
+        for (int i = 0; i < unselectedQuestions.Count; i++) {
+            QuestionData question = unselectedQuestions[i];
+            Debug.Log(i+" Unselected: "+question.ItemName);
+        }
+
+
 
         Debug.Log("Generating List Of Selected questions: "+ selectedQuestions.Count+" question Answers.");
     }

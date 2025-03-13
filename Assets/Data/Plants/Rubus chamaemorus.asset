@@ -20,7 +20,7 @@ MonoBehaviour:
     framst\xE4llning av sylt, men \xE4ven till lik\xF6r, samt bladen till te."
   sprites:
   - {fileID: 21300000, guid: f161138b71fa62a49ab0e545a7e394bb, type: 3}
-  army: 0
+  army: 2
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -33,4 +33,4 @@ MonoBehaviour:
   avoid: 0
   treeBush: 0
   medicinal: 
-  CategoriesBinary: 24
+  CategoriesBinary: 48

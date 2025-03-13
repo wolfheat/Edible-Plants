@@ -36,4 +36,4 @@ MonoBehaviour:
   avoid: 4
   treeBush: 0
   medicinal: 
-  CategoriesBinary: 32
+  CategoriesBinary: 64

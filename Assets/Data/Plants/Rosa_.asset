@@ -22,7 +22,7 @@ MonoBehaviour:
     ordentligt. "
   sprites:
   - {fileID: 21300000, guid: dbe89b019da35d940863ca36af61cd30, type: 3}
-  army: 0
+  army: 1
   commonness: 1
   feral: 0
   protectedPlant: 0
@@ -35,4 +35,4 @@ MonoBehaviour:
   avoid: 0
   treeBush: 2
   medicinal: 
-  CategoriesBinary: 9
+  CategoriesBinary: 145

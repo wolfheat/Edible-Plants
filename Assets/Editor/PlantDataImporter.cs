@@ -42,8 +42,8 @@ public class PlantDataImporter : EditorWindow
             string latinName = values[0].Trim();
             string itemName = values[1].Trim();
             string info = FinalizeInfo(values[2]);
-            Debug.Log("parsing commonness [" + values[0] +"]: " + values[3]);
             int commonness = Int32.Parse(values[3]);
+            Debug.Log("parsing commonness [" + latinName +"]: " + commonness);
             // Edibles 4-9
             int[] edible = new int[7];
             for (int j = 4; j < 7+4; j++) {

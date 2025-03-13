@@ -127,11 +127,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 442151263793152
-    m_Localized: Spiselige planter
+    m_Localized: Spiselige Planter
     m_Metadata:
       m_Items: []
   - m_Id: 1157224164749312
     m_Localized: Informasjon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1416844040990720
+    m_Localized: "Fr\xF8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1440233086513152
+    m_Localized: Kokes
     m_Metadata:
       m_Items: []
   references:

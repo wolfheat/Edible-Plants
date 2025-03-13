@@ -29,11 +29,11 @@ MonoBehaviour:
   protectedPlant: 0
   root: 0
   stem: 0
-  leaf: 0
-  flower: 0
+  leaf: 3
+  flower: 3
   seed: 0
   fruit: 0
   avoid: 0
   treeBush: 0
   medicinal: Finnig hud
-  CategoriesBinary: 0
+  CategoriesBinary: 130
