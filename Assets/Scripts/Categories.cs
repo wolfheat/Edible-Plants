@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using TMPro;
@@ -23,6 +24,13 @@ public class Categories : MonoBehaviour
     private void OnEnable()
     {
         // Every time this is enabled update info from the Settings?
+        StartCoroutine(UpdateVisualsDelayed());
+
+    }
+
+    private IEnumerator UpdateVisualsDelayed()
+    {
+        yield return null;
         UpdateVisuals();
     }
 
@@ -36,6 +44,7 @@ public class Categories : MonoBehaviour
             sb.Append(enabled ? " "+(categoryButtons[i].ButtonText()) : "");
             //sb.Append(enabled ? " "+(Category)(1<<i) : "");
         }
+        Debug.Log("Updating Visuals "+sb);  
         selectedText.text = sb.ToString();
     }
 
@@ -52,7 +61,7 @@ public class Categories : MonoBehaviour
         if (Enum.TryParse(categoryName, out Category categoryEnum)) {
             int binaryValue = (int)categoryEnum;
             Debug.Log("Binary values for "+categoryName+" = "+Convert.ToString(binaryValue,2));
-            Settings.Instance.AddOrRemoveCategory(binaryValue);
+            Settings.Instance.AddOrRemoveCategory(binaryValue); 
 
             UpdateVisuals();
         }
