@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 8186114259778106864}
   - component: {fileID: 4104436056689206471}
   - component: {fileID: 5486427270628389385}
+  - component: {fileID: 2656795881599377719}
   m_Layer: 5
   m_Name: Q
   m_TagString: Untagged
@@ -257,15 +258,27 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DigitalKeyboard, Assembly-CSharp
-        m_MethodName: OnButtonClicked
-        m_Mode: 2
+      - m_Target: {fileID: 2656795881599377719}
+        m_TargetAssemblyTypeName: KeyboardKey, Assembly-CSharp
+        m_MethodName: OnKeyPressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2656795881599377719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581255089028368065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7589a31a21709a488b905b65780801d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

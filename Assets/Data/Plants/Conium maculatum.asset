@@ -21,7 +21,6 @@ MonoBehaviour:
     \xE4r allra mest verksamma."
   sprites:
   - {fileID: 21300000, guid: d44912eb2a512a247a4df45887030a3f, type: 3}
-  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -32,6 +31,10 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 1
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 0
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 64

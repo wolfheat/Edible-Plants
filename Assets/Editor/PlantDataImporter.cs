@@ -30,7 +30,7 @@ public class PlantDataImporter : EditorWindow
         int updatedItems = 0;
         for (int i = 1; i < lines.Length; i++) // Skip header row
         {
-            //Debug.Log("Line "+i+": " + lines[i]);
+            Debug.Log("Line "+i+": " + lines[i]);
             string[] values = lines[i].Split(';');
             if (values.Length < 2) continue; // Ensure we have at least itemName & LatinName
             if (values[0].Length == 0) continue;
@@ -45,19 +45,20 @@ public class PlantDataImporter : EditorWindow
             int commonness = Int32.Parse(values[3]);
             Debug.Log("parsing commonness [" + latinName +"]: " + commonness);
             // Edibles 4-9
-            int[] edible = new int[7];
-            for (int j = 4; j < 7+4; j++) {
+            int[] edible = new int[9];
+            for (int j = 4; j < 9+4; j++) {
                 int index = j - 4;
                 //Debug.Log("parsing:" + values[j]);
                 int value = (j>=values.Length || values[j].Length == 0) ? 0 : Int32.Parse(values[j]);
                 edible[index] = value;
             }
-            bool feral = values[11]!="";
-            bool protectedPlant = values[12]!="";
+            bool feral = values[13]!="";
+            bool protectedPlant = values[14]!="";
 
-            int treeBush = values[13].Length > 0 ? Int32.Parse(values[13]):0;
-            string medicinal = values[14];
-            int army = values[15].Length > 0 ? Int32.Parse(values[15]):0;
+            int treeBush = values[15].Length > 0 ? Int32.Parse(values[15]):0;
+            string medicinal = values[16];
+            int army = values[17].Length > 0 ? Int32.Parse(values[17]):0;
+            int allergenic = values[18].Length > 0 ? Int32.Parse(values[18]):0;
 
             // Find all matching images
             Sprite[] sprites = FindSpritesForPlant(latinName);
@@ -73,7 +74,7 @@ public class PlantDataImporter : EditorWindow
             }
 
             // Create or update ScriptableObject
-            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral, protectedPlant, treeBush, medicinal, army);
+            QuestionData plantData = CreateOrUpdatePlantData(itemName, latinName, info, commonness, sprites, edible, feral, protectedPlant, treeBush, medicinal, army,allergenic);  
             updatedItems++;
         }
 
@@ -171,7 +172,7 @@ public class PlantDataImporter : EditorWindow
         }
     }
     
-    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral, bool protectedPlant, int treeBush, string medicinal, int army)
+    private static QuestionData CreateOrUpdatePlantData(string itemName, string latinName, string info, int commonness, Sprite[] sprites, int[] edible, bool feral, bool protectedPlant, int treeBush, string medicinal, int army, int allergenic)
     {
         //Debug.Log("Create Or Update Plant Data: " + latinName);
         
@@ -194,10 +195,13 @@ public class PlantDataImporter : EditorWindow
         plantData.flower = edible[3];
         plantData.seed = edible[4];
         plantData.fruit = edible[5];
-        plantData.avoid = edible[6];
+        plantData.sap = edible[6];
+        plantData.fungi = edible[7];
+        plantData.avoid = edible[8];
         plantData.treeBush = treeBush;
         plantData.medicinal = medicinal;
         plantData.army = army;
+        plantData.allergenic = allergenic;
 
         plantData.commonness = commonness;
         plantData.feral = feral;

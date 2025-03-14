@@ -25,7 +25,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2d08fbad60270a44fb0602f8351a3d11, type: 3}
   - {fileID: 21300000, guid: 91b308267f33b63408c3fabf9739b7f5, type: 3}
   - {fileID: 21300000, guid: f59a1c4e1b849c8468aaf6959f56d2c5, type: 3}
-  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -36,6 +35,10 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 0
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 0
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 32

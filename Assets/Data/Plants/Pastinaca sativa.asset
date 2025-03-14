@@ -22,7 +22,6 @@ MonoBehaviour:
     och hudskador, men kan \xE4ven orsaka f\xF6r\xE4ndringar i \xF6gonen."
   sprites:
   - {fileID: 21300000, guid: 4208f59342ffdad42b5ccf805623596a, type: 3}
-  army: 0
   commonness: 3
   feral: 0
   protectedPlant: 0
@@ -33,6 +32,10 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 2
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 0
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 64

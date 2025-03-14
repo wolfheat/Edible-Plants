@@ -10,7 +10,6 @@ public class QuestionData : ScriptableObject
     [TextArea(11,10)]
     public string info;
     public Sprite[] sprites;
-    public int army;
 
     [Header("Availability")]
     public int commonness;
@@ -25,16 +24,19 @@ public class QuestionData : ScriptableObject
     public int seed;
     public int fruit;
     public int avoid;
+    public int sap;
     public int treeBush;
+    public int fungi;
 
-
-    [Header("Medicinal Usage")]
+    [Header("Other Usages")]
+    public int army;
     public string medicinal;
+    public int allergenic;
 
     [Header("Categories")]
     public int CategoriesBinary;
 
-    public int[] PlantParts => new int[]{root,stem,leaf,flower,seed,fruit,avoid};
+    public int[] PlantParts => new int[]{root,stem,leaf,flower,seed,fruit,avoid,fungi};
 
     public void CreateCategories()
     {
@@ -55,6 +57,7 @@ public class QuestionData : ScriptableObject
             CategoriesBinary += 1 << 6;
         if (root > 1 || stem > 1 || leaf > 1 || flower > 1 || fruit > 1) // raw
             CategoriesBinary += 1 << 7;
-
+        if(fungi != 0)
+            CategoriesBinary += 1 << 8;
     }
 }

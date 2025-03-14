@@ -27,7 +27,6 @@ MonoBehaviour:
     anv\xE4nd som sparris."
   sprites:
   - {fileID: 21300000, guid: c589bbafbbc44e44eb2437f748b06afc, type: 3}
-  army: 1
   commonness: 1
   feral: 0
   protectedPlant: 0
@@ -38,6 +37,10 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 0
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 1
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 164

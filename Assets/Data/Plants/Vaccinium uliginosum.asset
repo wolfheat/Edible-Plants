@@ -21,7 +21,6 @@ MonoBehaviour:
     v\xE4xer i samma marker som bl\xE5b\xE4r f\xF6rv\xE4xlas de ibland. "
   sprites:
   - {fileID: 21300000, guid: b6ca6c1e932c1f64385992915580e7e7, type: 3}
-  army: 2
   commonness: 1
   feral: 0
   protectedPlant: 0
@@ -32,6 +31,10 @@ MonoBehaviour:
   seed: 0
   fruit: 1
   avoid: 0
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 2
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 48

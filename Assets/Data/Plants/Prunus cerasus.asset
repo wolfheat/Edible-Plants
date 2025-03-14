@@ -20,7 +20,6 @@ MonoBehaviour:
     \xE4n odlade varianter. G\xE5r att \xE4ta r\xE5a men kan vara ganska sura."
   sprites:
   - {fileID: 21300000, guid: 486f9ba7846d7bf419165240c9f9c9dd, type: 3}
-  army: 0
   commonness: 2
   feral: 1
   protectedPlant: 0
@@ -31,6 +30,10 @@ MonoBehaviour:
   seed: 0
   fruit: 1
   avoid: 0
+  sap: 0
   treeBush: 1
+  fungi: 0
+  army: 0
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 49

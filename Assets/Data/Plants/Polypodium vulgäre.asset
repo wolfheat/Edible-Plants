@@ -24,7 +24,6 @@ MonoBehaviour:
     men den \xE4r troligen cancerframkallande och orsakar dessutom illam\xE5ende."
   sprites:
   - {fileID: 21300000, guid: 51768ddf20e88464ca662f170abd455a, type: 3}
-  army: 2
   commonness: 1
   feral: 0
   protectedPlant: 0
@@ -35,6 +34,10 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 0
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 2
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 36

@@ -17,11 +17,10 @@ MonoBehaviour:
   info: "S\xF6tk\xF6rsb\xE4r eller f\xE5gelb\xE4r, Prunus avium, \xE4r en art i plommonsl\xE4ktet
     inom familjen rosv\xE4xter. Arten f\xF6rekommer naturligt i Europa. Det \xE4r
     tr\xE4d som blir cirka 15\u201330 meter h\xF6gt, och den art fr\xE5n vilken de
-    flesta odlade kultivarer av k\xF6rsb\xE4r tagits fram. Det finns i three main
-    variteter s\xE5som Bigarr\xE5er, vanlig s\xF6tk\xF6rsb\xE4r"
+    flesta odlade kultivarer av k\xF6rsb\xE4r tagits fram. Det finns i tre variteter
+    s\xE5som Bigarr\xE5er, vanlig s\xF6tk\xF6rsb\xE4r och hj\xE4rtk\xF6rsb\xE4r."
   sprites:
   - {fileID: 21300000, guid: bf74c2b030562a84987933423b2a4242, type: 3}
-  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -32,6 +31,10 @@ MonoBehaviour:
   seed: 0
   fruit: 1
   avoid: 0
+  sap: 0
   treeBush: 1
+  fungi: 0
+  army: 0
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 49

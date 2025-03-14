@@ -21,7 +21,6 @@ MonoBehaviour:
     tidigare anv\xE4nts som f\xE4rgv\xE4xt, i medicinen samt till \xF6rtte och mj\xF6l."
   sprites:
   - {fileID: 21300000, guid: 76ff1533d019a1a478add094816cfa0b, type: 3}
-  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -32,6 +31,10 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 2
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 0
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 96

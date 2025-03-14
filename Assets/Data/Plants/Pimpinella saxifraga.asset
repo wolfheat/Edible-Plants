@@ -23,7 +23,6 @@ MonoBehaviour:
     Ett extrakt av roten ingick bland annat i Pimpinelladroppar mot heshet och halsont."
   sprites:
   - {fileID: 21300000, guid: 703d48f7b80cdb94b840915b1fb8d284, type: 3}
-  army: 0
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -34,6 +33,10 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 0
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 0
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 164

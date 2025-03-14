@@ -23,7 +23,6 @@ MonoBehaviour:
     p\xE5 icke blomb\xE4rande stammar."
   sprites:
   - {fileID: 21300000, guid: 9c91a79d17eb4834594a63df28369321, type: 3}
-  army: 1
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -34,6 +33,10 @@ MonoBehaviour:
   seed: 0
   fruit: 0
   avoid: 0
+  sap: 0
   treeBush: 0
+  fungi: 0
+  army: 1
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 132

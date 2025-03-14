@@ -21,7 +21,6 @@ MonoBehaviour:
     drickas."
   sprites:
   - {fileID: 21300000, guid: 88409e9f1b7dd5e49bb863f0be363863, type: 3}
-  army: 2
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -32,6 +31,10 @@ MonoBehaviour:
   seed: 0
   fruit: 1
   avoid: 0
+  sap: 0
   treeBush: 2
+  fungi: 0
+  army: 2
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 181

@@ -8,6 +8,6 @@ public class InformationData : ScriptableObject
 
     [TextArea(15, 20)]
     public string info;
-    public Sprite sprite;
+    public Sprite[] sprites;
 
 }

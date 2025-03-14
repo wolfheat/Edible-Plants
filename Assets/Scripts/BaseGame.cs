@@ -29,6 +29,8 @@ public abstract class BaseGame : MonoBehaviour
     private string exchange = "Förväxlingsrisk";
     private string toxic = "Giftig";
     private string protectText = "Fridlyst!";
+    private string fungiText = "Lav/Svamp";
+    private string sapText = "Sav";
     private void SetInfoText()
     {
         infoObject.SetActive(true);
@@ -64,6 +66,10 @@ public abstract class BaseGame : MonoBehaviour
             infoText.text += $"<color=#985915>{feral}</color>";
         if (activeQuestionData.protectedPlant)
             infoText.text += $"<color=#FF2222>{protectText}</color>";
+        if (activeQuestionData.fungi > 0)
+            infoText.text += $"<color=#FF2222>{fungiText}</color>";
+        if (activeQuestionData.sap > 0)
+            infoText.text += $"<color=#FF2222>{sapText}</color>";
 
         // Army Info
         if(activeQuestionData.army != 0) {

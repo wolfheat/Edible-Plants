@@ -16,18 +16,18 @@ public class DigitalKeyboard : MonoBehaviour
         inputText.text = input;
     }
 
-    public void OnButtonClicked(Button button)
+    public void OnButtonClicked(string buttonString)
     {
-        Debug.Log("Clicked "+button.name);
+        Debug.Log("Clicked "+buttonString);
 
         // Update the inputed text
-        if (button.name == "Back") {
+        if (buttonString.Length > 1) { // BACK
             if (input.Length > 0) {
                 input = input.Substring(0, input.Length - 1);
             }
         }
         else {
-            input += button.name;
+            input += buttonString;
         }
 
         inputText.text = input;

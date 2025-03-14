@@ -53,8 +53,8 @@ Mar 2025
 12/3	* Added Plants and Info pages
 		* Fixed UI scaling issues
 		* Added Cooked category
-13/3	* Fixed Starmenu Options scaling correctly
-		
+13/3	* Fixed Startmenu Options scaling correctly
+14/3	* Fixed images and text creation in information pages. Can now integrate pictures.		
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
 

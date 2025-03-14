@@ -23,7 +23,6 @@ MonoBehaviour:
     anv\xE4ndas tillsammans med andra b\xE4r f\xF6r att skapa gel\xE9."
   sprites:
   - {fileID: 21300000, guid: 10ffeb1b54792474db77289ddff008ca, type: 3}
-  army: 0
   commonness: 2
   feral: 1
   protectedPlant: 0
@@ -34,6 +33,10 @@ MonoBehaviour:
   seed: 0
   fruit: 1
   avoid: 0
+  sap: 0
   treeBush: 2
+  fungi: 0
+  army: 0
   medicinal: 
+  allergenic: 0
   CategoriesBinary: 49
