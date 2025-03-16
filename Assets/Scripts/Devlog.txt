@@ -55,6 +55,12 @@ Mar 2025
 		* Added Cooked category
 13/3	* Fixed Startmenu Options scaling correctly
 14/3	* Fixed images and text creation in information pages. Can now integrate pictures.		
+		* UI updates
+15/3	* Added more plants
+		* Fixed fungus not showing
+		[Android Build: 75Mb] Added more plants [total 138, pictures: 204] 
+
+
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
 

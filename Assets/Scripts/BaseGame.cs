@@ -23,13 +23,12 @@ public abstract class BaseGame : MonoBehaviour
 
     protected QuestionData activeQuestionData = null;
 
-    private string[] parts = { "Rot", "Stjälk", "Blad", "Blommor", "Frö", "Frukt", "Undvik" };
+    private string[] parts = { "Rot", "Stjälk", "Blad", "Blommor", "Frö", "Frukt", "Undvik", "Lav/Svamp"};
     //private string[] parts = { "Root", "Stem", "Leaf", "Flower", "Seed", "Fruit", "Avoid" };
     private string feral = "Förvildad";
     private string exchange = "Förväxlingsrisk";
     private string toxic = "Giftig";
     private string protectText = "Fridlyst!";
-    private string fungiText = "Lav/Svamp";
     private string sapText = "Sav";
     private void SetInfoText()
     {
@@ -61,13 +60,13 @@ public abstract class BaseGame : MonoBehaviour
                 infoText.text += $"<color=#C88E16>{parts[i]} </color>"; // COOK EXTENSIVELY / AVOID
             else if (part == 4)
                 infoText.text += $"<color=#FF0000>{parts[i]} </color>"; // AVOID
+            else if (part == 7)
+                infoText.text += $"<color=#FF0000>{parts[i]} </color>"; // AVOID
         }
         if (activeQuestionData.feral)
             infoText.text += $"<color=#985915>{feral}</color>";
         if (activeQuestionData.protectedPlant)
             infoText.text += $"<color=#FF2222>{protectText}</color>";
-        if (activeQuestionData.fungi > 0)
-            infoText.text += $"<color=#FF2222>{fungiText}</color>";
         if (activeQuestionData.sap > 0)
             infoText.text += $"<color=#FF2222>{sapText}</color>";
 

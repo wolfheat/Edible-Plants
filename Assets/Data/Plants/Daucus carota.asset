@@ -19,7 +19,7 @@ MonoBehaviour:
     Den f\xF6r\xE4dlade moroten (D. carota sativa) klassas som en underart. Den f\xF6rekommer
     i Eurasien och Nordafrika. M\xE4nniskan har spridit den till Amerika, d\xE4r
     den blivit ett sv\xE5rt ogr\xE4s. Till skillnad fr\xE5n den f\xF6r\xE4dlade moroten
-    har vildmoroten en tunn, tr\xE4ig p\xE5lrot - som dock \xE4nd\xE5 \xE4r \xE4tlig."
+    har vildmoroten en tunn, tr\xE4ig p\xE5lrot som \xE4r \xE4tlig."
   sprites:
   - {fileID: 21300000, guid: c276290a46bd5674fa62dd3150cf7200, type: 3}
   commonness: 2
