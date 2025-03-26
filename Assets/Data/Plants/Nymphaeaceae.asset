@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08dc5fd003aa84044843482982ac5a4a, type: 3}
-  m_Name: Sium latifolium
+  m_Name: Nymphaeaceae
   m_EditorClassIdentifier: 
-  ItemName: "Vattenm\xE4rke"
-  LatinName: Sium latifolium
-  info: "Vattenm\xE4rke eller m\xE4rke (Sium latifolium) \xE4r en v\xE4xtart i familjen
-    flockblommiga v\xE4xter. Den blommar under sommarens senare del. Sium latifolium
-    anses vara giftig, vilket \xE5tminstone med s\xE4kerhet g\xE4ller om roten. \xD6rtst\xE5ndet
-    smakar beskt och skarpt och liktar hartsaktigt. Arten finnes blott i G\xF6ta-
-    och Svealand och dessutom vid Finlands s.-\xF6. gr\xE4ns. "
+  ItemName: "N\xE4ckrosor"
+  LatinName: Nymphaeaceae
+  info: "N\xE4ckrosv\xE4xter (Nymphaeaceae) \xE4r en v\xE4xtfamilj d\xE4r plantorna
+    v\xE4xer i stillast\xE5ende eller l\xE5ngsamt str\xF6mmande s\xF6tvatten. Roten
+    \xE4r giftig men har \xE4nd\xE5 anv\xE4nts historiskt. Den har malts till mj\xF6l
+    och slammats flera g\xE5nger f\xF6r att f\xE5 bort gifterna. Undvik."
   sprites:
-  - {fileID: 21300000, guid: a00ce37d773819040b663b2611a5787d, type: 3}
+  - {fileID: 21300000, guid: ac46ad74102293941946771e60265c24, type: 3}
   commonness: 2
   feral: 0
   protectedPlant: 0
@@ -30,7 +29,7 @@ MonoBehaviour:
   flower: 0
   seed: 0
   fruit: 0
-  avoid: 1
+  avoid: 4
   sap: 0
   treeBush: 0
   fungi: 0

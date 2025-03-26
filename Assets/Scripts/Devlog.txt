@@ -59,8 +59,12 @@ Mar 2025
 15/3	* Added more plants
 		* Fixed fungus not showing
 		[Android Build: 75Mb] Added more plants [total 138, pictures: 204] 
+26/3	* Added more plants
+		[Android Build: 81Mb] Added more plants [total 154, pictures: 222] 
 
+		
 
+		* Ha kartotekfunktion med alla växter som man bara kan läsa. Med sökfunktion.
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
 
