@@ -32,7 +32,8 @@ public abstract class BaseGame : MonoBehaviour
     private string sapText = "Sav";
     private void SetInfoText()
     {
-        infoObject.SetActive(true);
+        if(infoObject != null)
+            infoObject.SetActive(true);
         // Add edible in list
         infoTextHeader.text = activeQuestionData.ItemName;
         infoTextHeaderLatin.text = "(" + activeQuestionData.LatinName + ")"; // Italic
@@ -96,9 +97,17 @@ public abstract class BaseGame : MonoBehaviour
             QuestionImage.sprite = activeQuestionData.sprites[0];
     }
 
+    protected void SetSprite()
+    {
+        if (activeQuestionData.sprites.Length > 0) {
+            QuestionImage.sprite = activeQuestionData.sprites[Random.Range(0, activeQuestionData.sprites.Length)];
+            if (Random.Range(0, 2) != 0)
+                QuestionImage.rectTransform.localScale = new Vector3(QuestionImage.rectTransform.localScale.x * -1, 1, 1); // FLIP
+        }
+    }
 
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         LoadRandomQuestion();
     }
@@ -120,6 +129,20 @@ public abstract class BaseGame : MonoBehaviour
     }
 
 
+    protected void GetQuestion(int step = 0)
+    {
+        Debug.Log("Trying to get Question");
+        QuestionData questionData = ItemDictionary.GetQuestionData(step);
+        if (questionData == null) {
+            Debug.Log("Could not load any Question!");
+            return;
+        }
+        activeQuestionData = questionData;
+        SetInfoText();
+        // Set Sprite
+        SetSprite();
+    }
+    
     protected void GetRandomQuestion()
     {
         Debug.Log("Trying to get Random Question");

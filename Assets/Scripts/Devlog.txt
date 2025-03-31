@@ -61,12 +61,24 @@ Mar 2025
 		[Android Build: 75Mb] Added more plants [total 138, pictures: 204] 
 26/3	* Added more plants
 		[Android Build: 81Mb] Added more plants [total 154, pictures: 222] 
-
+31/3	* Added Cartotek mode showing all plants and info
 		
+		
+
+
 
 		* Ha kartotekfunktion med alla växter som man bara kan läsa. Med sökfunktion.
 
 		* För närvarande saxad text fråm bok samt wiki. Skriv om till slutgiltig anpassad version senare
+
+
+
+SOURCES
+
+Border - https://www.vecteezy.com/vector-art/37135376-vector-elegant-ornamental-frame-on-white-background
+Font - Robotoslab - 1001 fonts
+Forest Sprite Pack - Laetus Somnia - Unity Asset Store
+
 
 
 

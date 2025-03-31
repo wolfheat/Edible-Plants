@@ -16,6 +16,8 @@ public class ItemDictionary : MonoBehaviour
 
     private static string[] questionAnswers;
 
+    private static int activeCartotekIndex = 0;
+
     private void Awake()
     {
         if (Instance != null) {
@@ -117,5 +119,22 @@ public class ItemDictionary : MonoBehaviour
         
         // Return the X best options for this request
         return questionAnswers.Where(x => x.Contains(input, StringComparison.CurrentCultureIgnoreCase)).Take(v).ToList();
+    }
+
+    internal static QuestionData GetQuestionData(int step)
+    {
+        // Get the question at step - step
+
+        // Make sure the dictionary exists
+        if (Instance == null || Instance.questions.Count == 0) {
+            Debug.LogWarning("Item Dictionary does not have any items in it.");
+            return null;
+        }
+
+        // Get random index from the dictionary
+        activeCartotekIndex = (activeCartotekIndex + Instance.questions.Count + step) % Instance.questions.Count;
+
+        return Instance.questions[activeCartotekIndex];
+
     }
 }

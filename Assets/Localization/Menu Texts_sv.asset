@@ -145,6 +145,14 @@ MonoBehaviour:
     m_Localized: Kokas
     m_Metadata:
       m_Items: []
+  - m_Id: 8333609484414976
+    m_Localized: Kartotek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8342331094986752
+    m_Localized: "F\xF6reg\xE5ende"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

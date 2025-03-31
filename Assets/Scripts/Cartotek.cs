@@ -1,10 +1,18 @@
-using System.Collections.Generic;
-using TMPro;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using Color = UnityEngine.Color;
 
-public class TwoOptionGame : BaseGame
+public class Cartotek : BaseGame
 {
+    public void LoadNextQuestion() => GetQuestion(1);
+    public void LoadPreviousQuestion() => GetQuestion(-1);
+
+
+    protected override void OnEnable()
+    {
+        GetQuestion();
+    }
+
+
     public override void LoadRandomQuestion()
     {
         base.LoadRandomQuestion();
@@ -41,12 +49,13 @@ public class TwoOptionGame : BaseGame
             buttons[i].UpdateText(alternativeAnswers[i]);
 
         // Set Sprite
-        SetSprite();
+        if (activeQuestionData.sprites.Length > 0) {
+            QuestionImage.sprite = activeQuestionData.sprites[Random.Range(0, activeQuestionData.sprites.Length)];
+            if (Random.Range(0, 2) != 0)
+                QuestionImage.rectTransform.localScale = new Vector3(QuestionImage.rectTransform.localScale.x * -1, 1, 1); // FLIP
+        }
 
         base.UpdateCurrentQuestionVisuals();
     }
-
-    
-    private void PrintAnswers(List<string> listItems, string prefix="") => Debug.Log(prefix+" [" + string.Join(',', listItems) + "]");
 
 }
